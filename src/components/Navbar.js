@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { MdFavorite, MdSwapVert, MdArrowUpward } from "react-icons/md";
+import {  MdSwapVert, MdArrowUpward } from "react-icons/md";
+import { FiHeart } from "react-icons/fi";
+
 import logo from '../logo.svg';
 
 import { links } from '../links';
+import {useGlobalContext} from '../context';
 
 const Navbar = () => {
+
+  const {toggleSidebar} = useGlobalContext();
+
   return (
     <nav className='navbar'>
       <div className='nav-center'>
@@ -24,16 +30,16 @@ const Navbar = () => {
           })}
         </ul>
 
-        <div className='nav-favorites'>
-          <MdFavorite className='nav-favorites-icon'/>
-          <div className='favorites-container'>
-            <p className='favorites-number'>33</p>
-          </div>
-        </div>
+        <NavLink to='/TEST' className='nav-favorites'>
 
-        <div className='nav-toggle'>
+          <FiHeart className='nav-favorites-icon'/>
+          <p className='nav-favorites-number'>33</p>
+
+        </NavLink>
+
+        <button className='nav-toggle' onClick={toggleSidebar}>
           <MdSwapVert className='nav-toggle-icon'/>
-        </div>
+        </button>
 
       </div>
     </nav>

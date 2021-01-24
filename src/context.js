@@ -6,14 +6,25 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState('a'); 
+  const [smoothies, setSmoothies] = useState([]);
 
-  const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
+  const closeSidebar = () => {
+    setShowSidebar(false);
+  }
+
+  const openSidebar = () => {
+    setShowSidebar(true);
   }
 
   return <AppContext.Provider value={{
             showSidebar,
-            toggleSidebar,
+            openSidebar,
+            closeSidebar,
+            loading,
+            searchTerm,
+            smoothies
             }}>
           {children}
         </AppContext.Provider>

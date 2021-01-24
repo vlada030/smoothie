@@ -4,9 +4,13 @@ Variables
 ======
 */
 :root {
-  --primaryLightColor: #d4e6a5;
-  --primaryColor: #476a2e;
-  --primaryDarkColor: #c02c03;
+  /* --primaryLightColor: #d4e6a5; */
+  /* --primaryColor: #476a2e; */
+  /* --primaryDarkColor: #c02c03; */
+  --primaryLightColor: #e1ade1;
+  --primaryColor: #d46dd6;
+  --primaryDarkColor: #b83dba;
+  --secondaryColor: #c4ff0e;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBackground: #f1f5f8;
@@ -14,10 +18,12 @@ Variables
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
-  --mainRed: #bd0303;
+  /* --mainRed: #bd0303; */
+  --mainRed: #ec1c24;
   --mainTransition: all 0.3s ease-in-out;
   --mainSpacing: 0.3rem;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --lightShadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  --normalShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
   --smallWidth: 85vw;
@@ -101,7 +107,7 @@ Buttons
 }
 .btn-white:hover {
   background: var(--mainWhite);
-  color: var(--primaryColor);
+  color: var(--primaryDarkColor);
 }
 .btn-primary {
   background: var(--primaryColor);
@@ -110,7 +116,7 @@ Buttons
 }
 .btn-primary:hover {
   background: var(--primaryLightColor);
-  color: var(--primaryColor);
+  color: var(--primaryDarkColor);
 }
 .btn-block {
   width: 100%;
@@ -136,7 +142,6 @@ Navbar
   height: 5rem;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid var(--primaryColor);
   box-shadow: var(--lightShadow);
 }
 .nav-center {
@@ -166,11 +171,10 @@ Navbar
 
 .nav-toggle-icon {
   font-size: 2.5rem;
-  transition: var(--mainTransition);
   background-color: transparent;
-  border-radius: 50%;
   padding: .3rem;
-  box-shadow: var(--darkShadow);
+  transform: rotate(0);
+  transition: var(--mainTransition);
 }
 
 .nav-favorites-icon {
@@ -182,11 +186,11 @@ Navbar
 
 .nav-favorites-icon:hover,
 .nav-toggle-icon:active {
-  color: var(--primaryColor);
+  color: var(--mainRed);
 }
 
 .nav-toggle-icon:active {
-  box-shadow: var(--lightShadow);
+    transform: rotate(360deg);
 }
 
 .nav-favorites-number {
@@ -195,15 +199,16 @@ Navbar
   right:0;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--mainRed);
+  background-color: var(--secondaryColor);
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transition: var(--mainTransition);
 
 }
 
-.favorites-number {
-  font-size: 1rem;
+.nav-favorites-icon:hover + .nav-favorites-number {
+  border: 1px solid var(--mainWhite)
 }
 
 @media screen and (min-width: 800px) {
@@ -241,6 +246,12 @@ Navbar
   }
 }
 
+hr {
+  border: none;
+  border-bottom: 1px solid var(--mainBlack);
+  box-shadow: var(--lightShadow);
+}
+
 /* 
 ====== 
 Sidebar
@@ -267,14 +278,14 @@ Sidebar
   z-index: 2;
 }
 
-.sidebar-center {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 50%;
   min-width: 250px;
   min-height: 20rem;
-  background: var(--primaryColor);
+  background: var(--primaryLightColor);
   overflow-x: auto;
   border-radius: 0 3px 3px 3px;
   padding: 1rem;
@@ -286,7 +297,7 @@ Sidebar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--primaryLightColor);
+  color: var(--primaryDarkColor);
   margin-bottom: 2rem;
 }
 
@@ -301,7 +312,7 @@ Sidebar
 
 .sidebar-header .icon {
   font-size: 1.7rem;
-  color: var(--primaryLightColor);
+  color: var(--primaryDarkColor);
   transition: var(--mainTransition); 
 }
 
@@ -310,19 +321,19 @@ Sidebar
 }
 
 .sidebar-links {
-  margin-top: 2rem;
+  margin: 2rem 0;
   text-align: center;
 }
 
 .sidebar-link {
   font-size: 1.4rem;
-  color: var(--primaryLightColor);
+  color: var(--primaryDarkColor);
   display: block;
   width: 100%;
-  background-color: var(--primaryColor);
+  background-color: var(--primaryLightColor);
   padding: 1rem 0;
   margin-bottom: .5rem;
-  border-radius: 3px;
+  border-radius: var(--mainBorderRadius);
   transition: var(--mainTransition);
   letter-spacing: .8rem;
   text-transform: capitalize;
@@ -330,8 +341,8 @@ Sidebar
 
 .sidebar-link:active,
 .sidebar-link.active {
-  color: var(--primaryColor);
-  background-color: var(--primaryLightColor);
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
 }
 
 .sidebar-favorites-container {
@@ -342,7 +353,7 @@ Sidebar
 
 .sidebar-favorites-icon {
   font-size: 3rem;
-  color: var(--primaryLightColor);
+  color: var(--primaryDarkColor);
 }
 
 .sidebar-favorites-number {
@@ -352,7 +363,7 @@ Sidebar
   height: 1.5rem;
   width: 1.5rem;
   transform: translate(-57%);
-  background-color: var(--mainRed);
+  background-color: var(--secondaryColor);
   border-radius: 50%;
 
 }
@@ -389,7 +400,6 @@ Error
 }
 .error-container {
   text-align: center;
-  text-transform: capitalize;
 }
 /* 
 ====== 
@@ -544,7 +554,7 @@ Cocktail
     padding-top: 0;
   }
 }
-.loader,
+/* .loader,
 .loader:before,
 .loader:after {
   background: transparent;
@@ -602,5 +612,56 @@ Cocktail
   40% {
     box-shadow: 0 -2em;
     height: 5em;
+  }
+} */
+
+.loader {
+  display: block;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: auto;
+  margin-top: 10rem;
+  border-top: 0.1rem solid var(--secondaryColor);
+  border-right: 0.1rem solid turquoise;
+  border-bottom: 0.1rem solid var(--mainRed);
+  border-left: 0.1rem solid var(--primaryLightColor);
+  border-radius: 50%;
+  animation: load-right 2s infinite linear;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  height: 3rem;
+  width: 3rem;
+  animation: load-left 2s infinite linear;
+}
+
+@keyframes load-right {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load-left {
+  
+  0% {
+    filter: blur(4px);
+    transform: rotate(0);
+  }
+  
+  50% {
+    filter: blur(0);
+    
+  }  
+  
+  100% {
+    filter: blur(4px);
+    transform: rotate(-360deg);
   }
 }

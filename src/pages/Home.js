@@ -1,12 +1,14 @@
 import React from 'react'
 import SmoothieList from '../components/SmoothieList'
 import SearchForm from '../components/SearchForm'
+import { MdAllInclusive } from 'react-icons/md'
 
 const Home = () => {
   return (
-    <div>
-      <h2>home page</h2>
-    </div>
+    <main>
+      <SearchForm />
+      <SmoothieList />
+    </main>
   )
 }
 

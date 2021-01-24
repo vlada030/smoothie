@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import {  MdSwapVert, MdArrowUpward } from "react-icons/md";
-import { FiHeart } from "react-icons/fi";
+import { FiHeart, FiGrid } from "react-icons/fi";
 
-import logo from '../logo.svg';
+import logo from '../logo.png';
 
 import { links } from '../links';
 import {useGlobalContext} from '../context';
 
 const Navbar = () => {
 
-  const {toggleSidebar} = useGlobalContext();
+  const {openSidebar} = useGlobalContext();
 
   return (
     <nav className='navbar'>
@@ -37,8 +36,8 @@ const Navbar = () => {
 
         </NavLink>
 
-        <button className='nav-toggle' onClick={toggleSidebar}>
-          <MdSwapVert className='nav-toggle-icon'/>
+        <button className='nav-toggle' onClick={openSidebar}>
+          <FiGrid className='nav-toggle-icon'/>
         </button>
 
       </div>

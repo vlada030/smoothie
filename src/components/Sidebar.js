@@ -8,13 +8,13 @@ import {useGlobalContext} from '../context';
 
 const Sidebar = () => {
 
-    const {showSidebar, toggleSidebar} = useGlobalContext();
+    const {showSidebar, closeSidebar} = useGlobalContext();
 
-    return <aside className={showSidebar ? 'sidebar-wrapper show' : 'sidebar-wrapper'}>
-                <div className="sidebar-center">
+    return <aside className={showSidebar ? 'sidebar-wrapper show' : 'sidebar-wrapper'} onClick={closeSidebar}>
+                <div className="sidebar">
                     <div className="sidebar-header">
                         <h4>Smoothies</h4>
-                        <button onClick={toggleSidebar}>
+                        <button onClick={closeSidebar}>
                             <MdKeyboardBackspace className="icon"/>
                         </button>
                     </div>

@@ -9,4 +9,14 @@ export const links = [
         path: '/about',
         title: 'about'
     },
+    {
+        id: 3,
+        path: '/howto',
+        title: 'How To'
+    },
+    {
+        id: 4,
+        path: '/history',
+        title: 'history'
+    },
 ];

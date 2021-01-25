@@ -1,0 +1,161 @@
+{"smoothies": [
+    {
+        "id": "10000",
+        "name": "Green Smoothie",
+        "ingredients": [
+            "1 medium frozen avocado",
+            "1 cup packed spinach",
+            "1 cup sliced frozen banana",
+            "1 tablespoon ground flax",
+            "1/4 cup frozen cauliflower florets",
+            "3 pitted Medjool dates" ,   
+            "1.25 cups unsweetened almond milk (or more, to taste)"
+        ],
+        "instructions": "Place all ingredients for your green smoothie into a high-speed blender or Vitamix and blend until smooth.",
+        "preparation": "10 minutes",
+        "hashtag_1": "avocado",
+        "hashtag_2": "spinach",
+        "hashtag_3": "banana",
+        "hashtag_4": "flax",
+        "hashtag_5": "seeds",
+        "hashtag_6": "florets",
+        "hashtag_7": "cauliflower",
+        "hashtag_8": "medjool",
+        "hashtag_9": "bananas",
+        "nutrition": {
+            "Calories": "327",
+            "Sugar": "34",
+            "Sodium": "135",
+            "Fat": "14",
+            "Carbohydrates": "53",
+            "Fiber": "12",
+            "Protein": "5"
+        }
+    },
+    {
+        "id": "10001",
+        "name": "Strawberry Smoothie",
+        "ingredients": [
+            "1.5 cups whole frozen strawberries",
+            "1/2 medium banana",
+            "1/2 cup plain nonfat Greek yogurt",
+            "1 cup 100% orange juice"
+        ],
+        "instructions": "Place all ingredients into a high-speed blender and mix on high until smooth. Option to add a little bit more orange juice depending on how thick/thin you like your smoothies. Serve immediately.",
+        "preparation": "10 minutes",
+        "hashtag_1": "strawberries",
+        "hashtag_2": "banana",
+        "hashtag_3": "bananas",
+        "hashtag_4": "greek",
+        "hashtag_5": "yoghurt",
+        "hashtag_6": "orange",
+        "hashtag_7": "juice",
+        "nutrition": {
+            "Calories": "214",
+            "Sugar": "34",
+            "Fat": "0",
+            "Carbohydrates": "45",
+            "Fiber": "4",
+            "Protein": "9"
+        }
+    },
+    {
+        "id": "10002",
+        "name": "Peanut Butter Banana Smoothie",
+        "ingredients": [
+            "2 cups frozen sliced bananas",
+            "1/2 cup nonfat Greek yogurt",
+            "1 cup unsweetened almond milk",
+            "1 teaspoon vanilla extract",
+            "2 tablespoons all-natural peanut butter"
+        ],
+        "instructions": "Place all ingredients into a high-speed blender. Blend on high until smooth. Add more almond milk as needed. Serve immediately.",
+        "preparation": "10 minutes",
+        "hashtag_1": "vanilla",
+        "hashtag_2": "peanut",
+        "hashtag_3": "banana",
+        "hashtag_4": "flax",
+        "hashtag_5": "seeds",
+        "hashtag_6": "florets",
+        "hashtag_7": "almond",
+        "hashtag_8": "milk",
+        "hashtag_9": "bananas",
+        "hashtag_10": "butter",
+        "nutrition": {
+            "Calories": "295",
+            "Sugar": "21",
+            "Fat": "10",
+            "Carbohydrates": "40",
+            "Fiber": "6",
+            "Protein": "12"
+        }
+    },
+    {
+        "id": "10003",
+        "name": "Strawberry Banana Spinach Smoothie",
+        "ingredients": [
+            "2 cups frozen sliced bananas",
+            "2 cups frozen whole strawberries",
+            "4 cups fresh spinach",
+            "4 teaspoons chia seeds",
+            "2 tablespoons vanilla protein powder (any kind)",
+            "1/2 cup unsweetened almond milk"
+        ],
+        "instructions": "First, line a baking sheet with parchment paper. Then, evenly spread out 2 cups of sliced bananas, 2 cups of whole strawberries. Place in the freezer for about 2 hours or until completely frozen. Next, take 4 quart-size freezer bags and write the date and Strawberry Banana Green Smoothie on the front. Add 1 cup of the frozen fruit, a handful of spinach, and a teaspoon of chia seeds to each bag. Before sealing, make sure you squeeze as much air out as possible to prevent freezer burn. Seal and place in the freezer for later use. Once you’re ready to blend, empty contents of spinach smoothie bag into a high-speed blender. Then, add about 1/2 cup of almond milk and 2 tablespoons of your favorite protein powder. Blend on high for about 1 minute or until everything is blended.",
+        "preparation": "5 minutes",
+        "hashtag_1": "vanilla",
+        "hashtag_2": "strawberries",
+        "hashtag_3": "banana",
+        "hashtag_4": "spinach",
+        "hashtag_5": "seeds",
+        "hashtag_6": "chia",
+        "hashtag_7": "almond",
+        "hashtag_8": "milk",
+        "hashtag_9": "bananas",
+        "nutrition": {
+            "Calories": "196",
+            "Sugar": "14",
+            "Fat": "4",
+            "Carbohydrates": "23",
+            "Fiber": "6",
+            "Protein": "16"
+        }
+    },
+    {
+        "id": "10004",
+        "name": "Triple Berry Protein Smoothie",
+        "ingredients": [
+            "1.5 cups frozen triple berry mix",
+            "1 medium frozen banana",
+            "1/2 tablespoon chia seeds",
+            "1.25 cups unsweetened almond milk"
+        ],
+        "instructions": "Place all ingredients in a high-speed blender and mix until smooth.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "triple berry mix",
+            "banana",
+            "chia seeds",
+            "almond milk"
+        ],
+        "hashtag_1": "triple",
+        "hashtag_2": "berry",
+        "hashtag_3": "banana",
+        "hashtag_4": "spinach",
+        "hashtag_5": "seeds",
+        "hashtag_6": "chia",
+        "hashtag_7": "almond",
+        "hashtag_8": "milk",
+        "hashtag_9": "bananas",
+        "hashtag_10": "mix",
+        "nutrition": {
+            "Calories": "196",
+            "Sugar": "16",
+            "Fat": "3",
+            "Carbohydrates": "32",
+            "Fiber": "8",
+            "Protein": "12"
+        }
+    }
+]
+}

@@ -42,7 +42,7 @@ const AppProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [modalMsg, setModalMsg] = useState('');
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState(""); 
+  const [searchTerm, setSearchTerm] = useState(''); 
   const [smoothies, setSmoothies] = useState([]);
 
   const closeSidebar = () => {
@@ -55,6 +55,7 @@ const AppProvider = ({ children }) => {
 
   const closeModal = () => {
     setShowModal(false);
+    setModalMsg('');
   }
 
   
@@ -76,6 +77,8 @@ const AppProvider = ({ children }) => {
         })
         .catch((error) => {
             console.log("Error: " + error.code);
+            setShowModal(true);
+            setModalMsg(`${error.code}`);
             setLoading(false);
         });
 
@@ -89,6 +92,10 @@ const AppProvider = ({ children }) => {
             showSidebar,
             openSidebar,
             closeSidebar,
+            showModal,
+            setShowModal,
+            modalMsg,
+            closeModal,
             loading,
             searchTerm,
             smoothies

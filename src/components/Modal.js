@@ -4,20 +4,23 @@ import { useGlobalContext } from '../context';
 
 const Modal = React.memo(props => {
 
-  const {closeModal} = useGlobalContext();
+  const {modalMsg, showModal, closeModal} = useGlobalContext();
+  const classToggler = showModal ? 'modal-container show' : 'modal-container';
 
   return (
-    <React.Fragment>
-      <div className="backdrop" onClick={closeModal} />
-      <div className="Modal">
-        <h2>Došlo je do greške!</h2>
-        <div className="modal-actions">
-          <button type="button" className="btn" onClick={closeModal}>
-            Okay
-          </button>
+      <div className={classToggler} >
+        <div className="modal">
+          {/* <h3>Došlo je do greške!</h3> */}
+          <h3>Error happened!</h3>
+          <p>{`Error: ${modalMsg}`}</p>
+          <div className="modal-actions">
+            <button type="button" className="btn btn-danger" onClick={closeModal}>
+              Okay
+            </button>
+          </div>
         </div>
+
       </div>
-    </React.Fragment>
   );
 });
 

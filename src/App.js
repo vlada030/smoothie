@@ -12,6 +12,7 @@ import Error from './pages/Error';
 // import components
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Modal from './components/Modal';
 
 import {useGlobalContext} from './context';
 
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <Router>
+      <Modal />
       <Navbar />
       <Sidebar />
 

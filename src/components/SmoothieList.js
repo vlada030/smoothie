@@ -18,9 +18,14 @@ const SmoothieList = () => {
   }
 
   return (
-    <div>
-      <h2>cocktail list component</h2>
-    </div>
+    <section className='section'>
+      <h2 className='section-title'>smoothies</h2>
+      <div className='smoothies-center'>
+        {smoothies.map(item => {
+          return <Smoothie key={item.id} {...item}/>
+        })}
+      </div>
+    </section>
   )
 }
 

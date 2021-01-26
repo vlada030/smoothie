@@ -2,6 +2,7 @@
     {
         "id": "10000",
         "name": "Green Smoothie",
+        "imageURL": "./images/smoothie-0.jpg",
         "ingredients": [
             "1 medium frozen avocado",
             "1 cup packed spinach",
@@ -14,7 +15,6 @@
         "instructions": "Place all ingredients for your green smoothie into a high-speed blender or Vitamix and blend until smooth.",
         "preparation": "10 minutes",
         "hashtag": [
-            "all",
             "avocado",
             "spinach",
             "banana",
@@ -35,6 +35,7 @@
     {
         "id": "10001",
         "name": "Strawberry Smoothie",
+        "imageURL": "./images/smoothie-1.jpg",
         "ingredients": [
             "1.5 cups whole frozen strawberries",
             "1/2 medium banana",
@@ -44,7 +45,6 @@
         "instructions": "Place all ingredients into a high-speed blender and mix on high until smooth. Option to add a little bit more orange juice depending on how thick/thin you like your smoothies. Serve immediately.",
         "preparation": "10 minutes",
         "hashtag": [
-            "all",
             "strawberries",
             "banana",
             "Greek yogurt",
@@ -62,6 +62,7 @@
     {
         "id": "10002",
         "name": "Peanut Butter Banana Smoothie",
+        "imageURL": "./images/smoothie-2.jpg",
         "ingredients": [
             "2 cups frozen sliced bananas",
             "1/2 cup nonfat Greek yogurt",
@@ -72,7 +73,6 @@
         "instructions": "Place all ingredients into a high-speed blender. Blend on high until smooth. Add more almond milk as needed. Serve immediately.",
         "preparation": "10 minutes",
         "hashtag": [
-            "all",
             "vanilla",
             "banana",
             "Greek yogurt",
@@ -91,6 +91,7 @@
     {
         "id": "10003",
         "name": "Strawberry Banana Spinach Smoothie",
+        "imageURL": "./images/smoothie-3.jpg",
         "ingredients": [
             "2 cups frozen sliced bananas",
             "2 cups frozen whole strawberries",
@@ -102,7 +103,6 @@
         "instructions": "First, line a baking sheet with parchment paper. Then, evenly spread out 2 cups of sliced bananas, 2 cups of whole strawberries. Place in the freezer for about 2 hours or until completely frozen. Next, take 4 quart-size freezer bags and write the date and Strawberry Banana Green Smoothie on the front. Add 1 cup of the frozen fruit, a handful of spinach, and a teaspoon of chia seeds to each bag. Before sealing, make sure you squeeze as much air out as possible to prevent freezer burn. Seal and place in the freezer for later use. Once you’re ready to blend, empty contents of spinach smoothie bag into a high-speed blender. Then, add about 1/2 cup of almond milk and 2 tablespoons of your favorite protein powder. Blend on high for about 1 minute or until everything is blended.",
         "preparation": "5 minutes",
         "hashtag": [
-            "all",
             "banana",
             "strawberries",
             "spinach",
@@ -122,6 +122,7 @@
     {
         "id": "10004",
         "name": "Triple Berry Protein Smoothie",
+        "imageURL": "./images/smoothie-4.jpg",
         "ingredients": [
             "1.5 cups frozen triple berry mix",
             "1 medium frozen banana",
@@ -131,7 +132,6 @@
         "instructions": "Place all ingredients in a high-speed blender and mix until smooth.",
         "preparation": "5 minutes",
         "hashtag": [
-            "all",
             "triple berry mix",
             "bananas",
             "chia", 
@@ -146,6 +146,194 @@
             "Carbohydrates": "32",
             "Fiber": "8",
             "Protein": "12"
+        }
+    },
+    {
+        "id": "10005",
+        "name": "Healthy Banana Protein Smothie",
+        "imageURL": "./images/smoothie-5.jpg",
+        "ingredients": [
+            "¾ cup nonfat Greek yogurt, frozen into cubes",
+            "2 cups frozen sliced bananas",
+            "1 teaspoon vanilla extract",
+            "¼ cup vanilla protein powder (we used Garden of Life Raw Organic Protein)",
+            "2 cups milk, any kind (we used Almond Breeze Unsweetened Vanilla Almond Milk)"
+        ],
+        "instructions": "First, freeze ¾ cup nonfat Greek Yogurt in an ice cube tray. Once the Greek yogurt has fully frozen, place all ingredients for healthy banana shake into a high-speed blender. Blend until smooth and serve with your favorite toppings.",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "greek yogurt",
+            "bananas",
+            "vanilla", 
+            "almond",
+            "milk"
+        ],
+        "nutrition": {
+            "Calories": "163",
+            "Sugar": "10",
+            "Fat": "2",
+            "Carbohydrates": "19",
+            "Fiber": "3",
+            "Protein": "16"
+        }
+    },
+    {
+        "id": "10006",
+        "name": "Strawberry Banana Smoothie with Peanut Butter",
+        "imageURL": "./images/smoothie-6.jpg",
+        "ingredients": [
+            "1 cup frozen strawberries",
+            "1 cup frozen sliced banana",
+            "1/4 cup nonfat plain Greek yogurt",
+            "2 tablespoons all-natural creamy peanut butter",
+            "1 tablespoon ground flax seeds",
+            "1 teaspoon vanilla extract",
+            "1 cup unsweetened almond milk"
+        ],
+        "instructions": "Place all ingredients in a high-speed blender and mix until smooth. Serve with a drizzle of peanut butter and fresh fruit.",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "strawberries",
+            "Greek Yogurt",
+            "bananas",
+            "peanut butter",
+            "vanilla", 
+            "flax seeds",
+            "almond milk"
+        ],
+        "nutrition": {
+            "Calories": "223",
+            "Sugar": "24",
+            "Fat": "22",
+            "Carbohydrates": "35",
+            "Fiber": "6",
+            "Protein": "9"
+        }
+    },
+    {
+        "id": "10007",
+        "name": "Pumpkin Berry Smoothie",
+        "imageURL": "./images/smoothie-7.jpg",
+        "ingredients": [
+            "2 tablespoons pumpkin puree",
+            "1 tablespoon cashew butter",
+            "1 cup frozen blueberries",
+            "1/2 frozen banana",
+            "1/2 tablespoon flax seed meal",
+            "1/2 teaspoon pumpkin pie spice",
+            "1 cup almond milk, unsweetened"
+        ],
+        "instructions": "Place all ingredients in a high speed blender and blend on high until smooth. Scrape the sides of the blender and add additional almond milk (1 teaspoon at a time) if smoothie is too thick. Blend until smooth. Serve with homemade granola or fruit toppings and enjoy!",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "pumpkin",
+            "cashew butter",
+            "blueberries",
+            "banana",
+            "vanilla", 
+            "flax seeds",
+            "almond milk"
+        ],
+        "nutrition": {
+            "Calories": "287",
+            "Sugar": "23",
+            "Fat": "12",
+            "Carbohydrates": "N/A",
+            "Fiber": "9",
+            "Protein": "7"
+        }
+    },
+    {
+        "id": "10008",
+        "name": "Chocolate Protein Smoothie",
+        "imageURL": "./images/smoothie-8.jpg",
+        "ingredients": [
+            "1 cup frozen blueberries",
+            "1 medium frozen banana",
+            "1/4 cup chocolate protein powder (any kind!)",
+            "1 tablespoon cocoa powder",
+            "1/4 cup nonfat Greek yogurt",
+            "2 tablespoons cashew butter",
+            "1/2 tablespoon ground flaxseed",
+            "1 cup unsweetened plain almond milk"
+        ],
+        "instructions": "Place all ingredients into a high-speed blender. Blend on high for around 1 minute, stopping to scrape the sides. You may need to add more milk to thin as needed. Serve immediately!",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "blueberries",
+            "chocolate protein powder",
+            "cocoa powder",
+            "banana",
+            "Greek yogurt", 
+            "flax seeds",
+            "almond milk"
+        ],
+        "nutrition": {
+            "Calories": "279",
+            "Sugar": "18",
+            "Fat": "10",
+            "Carbohydrates": "37",
+            "Fiber": "6",
+            "Protein": "17"
+        }
+    },
+    {
+        "id": "10009",
+        "name": "Pumpkin Smoothie",
+        "imageURL": "./images/smoothie-9.jpg",
+        "ingredients": [
+            "2 medium frozen bananas",
+            "1/2 cup unsweetened pumpkin puree",
+            "3/4 cup coffee, cold (I just used leftover from the morning’s pot!)",
+            "3/4 cup milk, any kind",
+            "1/2 teaspoon pumpkin pie spice",
+            "1 teaspoon maple syrup"
+        ],
+        "instructions": "Place all ingredients into a high-speed blender. Blend on high for around 1 minute, stopping to scrape the sides if needed. Serve immediately with your favorite whipped topping.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "banana",
+            "pumpkin puree",
+            "coffee",
+            "milk"
+        ],
+        "nutrition": {
+            "Calories": "171",
+            "Sugar": "20",
+            "Fat": "2",
+            "Carbohydrates": "38",
+            "Fiber": "5",
+            "Protein": "3"
+        }
+    },
+    {
+        "id": "10010",
+        "name": "Blueberry Banana Smoothie",
+        "imageURL": "./images/smoothie-10.jpg",
+        "ingredients": [
+            "1 cup frozen blueberries",
+            "1 cup frozen sliced bananas",
+            "1 tablespoon flax meal",
+            "1 cup unsweetened almond milk",
+            "1 teaspoon vanilla extract"
+        ],
+        "instructions": "Place all ingredients into a high speed blender and blend until smooth.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "banana",
+            "blueberries",
+            "flax meal",
+            "almond milk",
+            "vanilla"
+        ],
+        "nutrition": {
+            "Calories": "147",
+            "Sugar": "17",
+            "Fat": "3",
+            "Carbohydrates": "29",
+            "Fiber": "5",
+            "Protein": "3",
+            "Sodium": "92" 
         }
     }
 ]

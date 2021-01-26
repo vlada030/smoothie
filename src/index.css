@@ -7,6 +7,7 @@ Variables
   /* --primaryLightColor: #d4e6a5; */
   /* --primaryColor: #476a2e; */
   /* --primaryDarkColor: #c02c03; */
+  /* --mainRed: #bd0303; */
   --primaryLightColor: #e1ade1;
   --primaryColor: #d46dd6;
   --primaryDarkColor: #b83dba;
@@ -18,7 +19,6 @@ Variables
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
-  /* --mainRed: #bd0303; */
   --mainRed: #ec1c24;
   --mainTransition: all 0.3s ease-in-out;
   --mainSpacing: 0.3rem;
@@ -117,6 +117,16 @@ Buttons
 .btn-primary:hover {
   background: var(--primaryLightColor);
   color: var(--primaryDarkColor);
+}
+.btn-danger {
+  background: var(--mainWhite);
+  /* color: var(--mainWhite); */
+  border-color: var(--mainRed);
+}
+.btn-danger:hover {
+  background: var(--primaryLightColor);
+  color: var(--primaryDarkColor);
+  border-color: transparent;
 }
 .btn-block {
   width: 100%;
@@ -403,7 +413,7 @@ Error
 }
 /* 
 ====== 
-Cocktails List 
+smoothies List 
 ======
 */
 
@@ -418,7 +428,7 @@ Cocktails List
   margin-bottom: 3.5rem;
   margin-top: 1rem;
 }
-.cocktails-center {
+.smoothies-center {
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--fullWidth);
@@ -428,17 +438,17 @@ Cocktails List
   /* align-items: start; */
 }
 @media screen and (min-width: 576px) {
-  .cocktails-center {
+  .smoothies-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
   }
 }
 /* 
 ====== 
-Cocktail 
+smoothie 
 ======
 */
 
-.cocktail {
+.smoothie {
   background: var(--mainWhite);
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
@@ -447,27 +457,30 @@ Cocktail
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
 }
-.cocktail:hover {
+.smoothie:hover {
   box-shadow: var(--darkShadow);
 }
-.cocktail img {
+.smoothie img {
   height: 20rem;
   object-fit: cover;
   border-top-left-radius: var(--mainBorderRadius);
   border-top-right-radius: var(--mainBorderRadius);
 }
-.cocktail-footer {
+.smoothie-footer {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.cocktail-footer h3,
-.cocktail-footer h4,
-.cocktail-footer p {
+.smoothie-footer h3,
+.smoothie-footer h4,
+.smoothie-footer p {
   margin-bottom: 0.3rem;
 }
-.cocktail-footer h3 {
-  font-size: 2rem;
+.smoothie-footer h3 {
+  font-size: 1.5rem;
 }
-.cocktail-footer p {
+.smoothie-footer p {
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
 }
@@ -510,11 +523,11 @@ Form
 }
 /* 
 ====== 
-Cocktail
+smoothie
 ======
 */
 
-.cocktail-section {
+.smoothie-section {
   text-align: center;
 }
 .drink {
@@ -666,32 +679,7 @@ Cocktail
   }
 }
 
-.modal {
-  position: fixed;
-  top: 30vh;
-  left: calc(50% - 15rem);
-  width: 30rem;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  z-index: 100;
-  border-radius: 7px;
-}
-
-.modal h2 {
-  margin: 0;
-  padding: 1rem;
-  background: #ff2058;
-  color: white;
-  border-radius: 7px 7px 0 0;
-}
-
-.modal-actions {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 0.5rem;
-}
-
-.backdrop {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -699,8 +687,42 @@ Cocktail
   height: 100vh;
   background: rgba(0, 0, 0, 0.75);
   z-index: 50;
+  transform: scale(0);
+  transition: var(--mainTransition);
 }
 
-.main {
-  position: relative;
+.show {
+  transform: scale(1);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: calc(50% - 15rem);
+  width: 30rem;
+  /* transform: translate(-50%, -50%); */
+  background: var(--mainBackground);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 100;
+  border-radius: var(--mainBorderRadius);
+}
+
+.modal h3 {
+  margin: 0;
+  padding: 1rem;
+  background: var(--mainRed);
+  color: var(--mainBackground);
+  border-radius: var(--mainBorderRadius) var(--mainBorderRadius) 0 0;
+}
+
+.modal p {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-top: 0;
 }

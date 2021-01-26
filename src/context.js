@@ -4,14 +4,14 @@ import { useCallback } from 'react';
 // import databaseRef from 'firebase';
 
 // ========================================
-// NECE DA RADI AKO SE STAVI U POSEBAN MODUL
+// FIREBASE NECE DA RADI AKO SE STAVI U POSEBAN FAJL
 // ========================================
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
 import firebase from "firebase/app";
 
-// app contains all submodule database, authentication, firestore...
+// app contains all submodules: database, authentication, firestore...
 import "firebase/database";
 
 // TODO: Replace the following with your app's Firebase project configuration
@@ -39,8 +39,10 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalMsg, setModalMsg] = useState('');
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState("spinach"); 
+  const [searchTerm, setSearchTerm] = useState(""); 
   const [smoothies, setSmoothies] = useState([]);
 
   const closeSidebar = () => {
@@ -51,8 +53,14 @@ const AppProvider = ({ children }) => {
     setShowSidebar(true);
   }
 
+  const closeModal = () => {
+    setShowModal(false);
+  }
+
   
   useEffect(() => {
+    setLoading(true);
+
     databaseRef
         .once("value")
         .then(snapshot => {
@@ -62,12 +70,19 @@ const AppProvider = ({ children }) => {
               // pretvaranjem u string izbegava se delom jednina/mnozina reci
               return element.ingredients.join('').toLowerCase().includes(searchTerm)
             });
-            console.log(filteredData);
+
+            setSmoothies(filteredData);
+            setLoading(false);
         })
         .catch((error) => {
             console.log("Error: " + error.code);
+            setLoading(false);
         });
 
+    // child__added efikasniji metod od nalues koji vraca ceo dokument zato je on za manje baze
+  //   databaseRef.on("child_added", snap => {
+  //     console.log(snap.val());
+  // });
   }, [searchTerm]);
 
   return <AppContext.Provider value={{

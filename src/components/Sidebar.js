@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import { MdKeyboardBackspace } from "react-icons/md";
 import { FiHeart } from "react-icons/fi";
-import {links} from '../links';
+import {links} from '../assets/links';
 
 import {useGlobalContext} from '../context';
 

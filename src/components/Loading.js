@@ -1,5 +1,5 @@
 import React from 'react';
-import blender from '../blender.svg';
+import blender from '../assets/blender.svg';
 
 const Loading = () => {
  return (

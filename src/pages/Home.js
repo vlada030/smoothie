@@ -1,11 +1,13 @@
-import React from 'react'
-import SmoothieList from '../components/SmoothieList'
-import SearchForm from '../components/SearchForm'
-import { MdAllInclusive } from 'react-icons/md'
+import React from 'react';
+import SmoothieList from '../components/SmoothieList';
+import SearchForm from '../components/SearchForm';
+import Modal from '../components/Modal';
+import { MdAllInclusive } from 'react-icons/md';
 
 const Home = () => {
   return (
-    <main>
+    <main className='main'>
+      <Modal />
       <SearchForm />
       <SmoothieList />
     </main>

@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FiHeart, FiGrid } from "react-icons/fi";
 
-import logo from '../logo.png';
+import logo from '../assets/logo.png';
 
-import { links } from '../links';
+import { links } from '../assets/links';
 import {useGlobalContext} from '../context';
 
 const Navbar = () => {

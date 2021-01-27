@@ -12,9 +12,11 @@ const SmoothieList = () => {
   }
 
   if (smoothies.length < 1) {
-    return <h2 className='section-title'>
-              No Smoothies Matched Your Search Criteria
-            </h2>
+    return <section className='section'>
+            <h2 className='section-title'>
+                No Smoothies Matched Your Search Criteria
+              </h2>
+          </section>
   }
 
   return (

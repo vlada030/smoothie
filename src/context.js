@@ -1,39 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useCallback } from 'react';
 
-// import databaseRef from 'firebase';
-
-// ========================================
-// FIREBASE NECE DA RADI AKO SE STAVI U POSEBAN FAJL
-// ========================================
-
-// Firebase App (the core Firebase SDK) is always required and
-// must be listed before other Firebase SDKs
-import firebase from "firebase/app";
-
-// app contains all submodules: database, authentication, firestore...
-import "firebase/database";
-
-// TODO: Replace the following with your app's Firebase project configuration
-// For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
-// var config = {
-//   apiKey: "AIzaSyC4HZnxR0f3GXI31GteauOsxfGqB_sgspA",
-//   authDomain: "smoothies-79d37.firebaseapp.com",
-//   databaseURL: "https://smoothies-79d37-default-rtdb.europe-west1.firebasedatabase.app",
-//   projectId: "smoothies-79d37",
-//   storageBucket: "smoothies-79d37.appspot.com",
-//   messagingSenderId: "424039640547",
-//   appId: "1:424039640547:web:67eef5a13704b0762b04d6",
-//   measurementId: "G-CHVXKZGRYM"
-//   };
-
-var config = {
-    databaseURL: "https://smoothies-79d37-default-rtdb.europe-west1.firebasedatabase.app",
-  };
-
-firebase.initializeApp(config);
-// Get a reference to the database service
-var databaseRef = firebase.database().ref('smoothies');
+// import podesenog firebase objekta
+import database from './firebaseBase';
+const databaseRef = database.database().ref();
 
 const AppContext = React.createContext();
 
@@ -58,12 +28,15 @@ const AppProvider = ({ children }) => {
     setModalMsg('');
   }
 
-  
+
   useEffect(() => {
     setLoading(true);
+    // ubacen setTimeout da nebi stalno ucitavao prilikom svakog inputa, manje server opterecen
+    const timeout = setTimeout(() => {
+      console.log(`FETCH`);
 
-    databaseRef
-        .once("value")
+      // POSTAVLJANJE FIREBASE
+      databaseRef.child('smoothies').once("value")
         .then(snapshot => {
             const data = snapshot.val();
             const filteredData = data.filter(element => {
@@ -82,10 +55,15 @@ const AppProvider = ({ children }) => {
             setLoading(false);
         });
 
-    // child__added efikasniji metod od nalues koji vraca ceo dokument zato je on za manje baze
-  //   databaseRef.on("child_added", snap => {
-  //     console.log(snap.val());
-  // });
+        // child__added efikasniji metod od values koji vraca ceo dokument zato je on za manje baze
+        //   databaseRef.on("child_added", snap => {
+        //     console.log(snap.val());
+        // });
+
+    }, 800);
+
+    return () => clearTimeout(timeout);
+    
   }, [searchTerm]);
 
   return <AppContext.Provider value={{
@@ -98,6 +76,7 @@ const AppProvider = ({ children }) => {
             closeModal,
             loading,
             searchTerm,
+            setSearchTerm,
             smoothies
             }}>
           {children}

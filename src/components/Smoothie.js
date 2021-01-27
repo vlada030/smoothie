@@ -14,6 +14,9 @@ const Cocktail = (props) => {
         <h3>{name}</h3>
         <h4>{`${hashtag.join(', ')}`}</h4>
         <p>{`Time to prepare: ${preparation}`}</p>
+        <Link to={`/smoothie/${id}`} className='btn btn-primary btn-details'>
+          Read more
+        </Link>
       </div>
     </article>
   )

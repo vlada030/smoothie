@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Cocktail = (props) => {
+const Smoothie = (props) => {
 
   const {id, name, imageURL, hashtag, preparation} = props;
 
@@ -22,4 +22,4 @@ const Cocktail = (props) => {
   )
 }
 
-export default Cocktail
+export default Smoothie;

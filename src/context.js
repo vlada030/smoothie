@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { useCallback } from 'react';
 
 // import podesenog firebase objekta
-import database from './firebaseBase';
+import database from './firebaseConfig';
 const databaseRef = database.database().ref();
 
 const AppContext = React.createContext();
@@ -73,6 +73,7 @@ const AppProvider = ({ children }) => {
             showModal,
             setShowModal,
             modalMsg,
+            setModalMsg,
             closeModal,
             loading,
             searchTerm,

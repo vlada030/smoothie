@@ -335,6 +335,232 @@
             "Protein": "3",
             "Sodium": "92" 
         }
+    },
+    {
+        "id": "10011",
+        "name": "Pomegranate Green Smoothie",
+        "imageURL": "./images/smoothie-11.jpg",
+        "ingredients": [
+            "1/2 cup frozen strawberries",
+            "1 frozen banana, medium",
+            "1 cup fresh kale, packed",
+            "1/2 cup Greek yogurt",
+            "1/2 cup pomegranate juice",
+            "1/2 cup water",
+            "1 scoop vanilla protein powder (any kind!)",
+            "toppings: hemp seeds, pomegranate arils, pistachio nuts, and dark chocolate"
+        ],
+        "instructions": "Place all ingredients in a high speed food processor and mix until smooth. You may need to add a bit more pomegranate juice depending on how thick you like your smoothies.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "frozen strawberries",
+            "banana",
+            "fresh kale",
+            "pomegranate",
+            "Greek yogurt"
+        ],
+        "nutrition": { }
+    },
+    {
+        "id": "10012",
+        "name": "Apple Pie Smoothie",
+        "imageURL": "./images/smoothie-12.jpg",
+        "ingredients": [
+            "1 frozen banana, small",
+            "1/2 cup non-fat vanilla Greek yogurt",
+            "2/3 cup apple sauce, unsweetened",
+            "1/4 cup rolled oats",
+            "1 teaspoon cinnamon",
+            "1 teaspoon vanilla extract",
+            "1/2 cup almond milk, unsweetened",
+            "optional: handful of fresh spinach or kale"
+        ],
+        "instructions": "Place all ingredients in a high-speed blender. Blend until smooth. Serve with lots of fixings on top!",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "banana",
+            "Greek yogurt",
+            "apple sauce",
+            "almond milk",
+            "rolled oats",
+            "vanilla"
+        ],
+        "nutrition": {
+            "Calories": "354",
+            "Sugar": "37",
+            "Fat": "3",
+            "Carbohydrates": "61",
+            "Fiber": "8",
+            "Protein": "15"
+        }
+    },
+    {
+        "id": "10013",
+        "name": "Apple Smoothie",
+        "imageURL": "./images/smoothie-13.jpg",
+        "ingredients": [
+            "90gr apple sauce cups, frozen*",
+            "1 cup unsweetened almond milk (or any kind of milk)",
+            "2 tablespoons rolled oats",
+            "2 tablespoons nut butter (any kind)",
+            "1 teaspoon ground flax seed",
+            "1 teaspoon maple syrup",
+            "1/4 teaspoon ground cinnamon"
+        ],
+        "instructions": "First, freeze 90gr apple sauce cups for at least 2 hours or overnight. Once frozen, run the applesauce cups under hot water for a few seconds to remove from the plastic. Then place into a high-speed blender. Add the rest of the ingredients and cover. Blend on high for around a minute or until smooth.",
+        "preparation": "2 hours",
+        "hashtag": [
+            "nut butter",
+            "apple sauce",
+            "almond milk",
+            "rolled oats",
+            "maple syrup",
+            "flax seed"
+        ],
+        "nutrition": {
+            
+        }
+    },
+    {
+        "id": "10014",
+        "name": "Strawberry Pineapple Smoothie",
+        "imageURL": "./images/smoothie-14.png",
+        "ingredients": [
+            "1.5 cups frozen pineapple chunks",
+            "1.5 cups frozen strawberries",
+            "1/2 cup vanilla Greek yogurt",
+            "1 teaspoon vanilla extract",
+            "1.5 cups almond milk, unsweetened (or more to taste)"
+        ],
+        "instructions": "Place all ingredients for your strawberry pineapple smoothie into a high-speed blender. Blend on high until smooth. Depending on how frozen your fruit is, you may need to add more almond milk. Serve with extra fresh pineapple chunks on the bottom.",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "pineapple",
+            "Greek yogurt",
+            "strawberries",
+            "almond milk",
+            "vanilla"
+        ],
+        "nutrition": {
+            "Calories": "165",
+            "Sugar": "2",
+            "Fat": "2",
+            "Carbohydrates": "30",
+            "Fiber": "5",
+            "Protein": "8"
+        }
+    },
+    {
+        "id": "10015",
+        "name": "Magical Orange Creamsicle Smoothie",
+        "imageURL": "./images/smoothie-15.jpg",
+        "ingredients": [
+            "1 cup frozen banana slices",
+            "1 teaspoon vanilla extract",
+            "1 cup 100% orange juice",
+            "optional: 1/2 cup ice",
+            "optional: 1 scoop vanilla protein powder, coconut whipped cream, orange zest"
+        ],
+        "instructions": "Place frozen bananas, vanilla extract, and orange juice into a high-speed blender and blend until smooth. Option at this point to add a handful of ice (depending on thickness preference) and/or other add-ins such as vanilla protein powder and fresh orange zest. Blend one more time and then serve immediately.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "banana",
+            "vanilla",
+            "orange juice"
+        ],
+        "nutrition": {
+            "Calories": "236",
+            "Sugar": "38",
+            "Fat": "0",
+            "Carbohydrates": "56",
+            "Fiber": "3",
+            "Protein": "3"
+        }
+    },
+    {
+        "id": "10016",
+        "name": "Mango Smoothie",
+        "imageURL": "./images/smoothie-16.jpg",
+        "ingredients": [
+            "2 cups frozen mango slices",
+            "1 15-oz. can light coconut milk",
+            "1/2 tablespoon flaxseed meal",
+            "1 large frozen banana"
+        ],
+        "instructions": "Place all of the ingredients into a high-speed blender. Blend on high until smooth. Eat immediately.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "mango",
+            "coconut milk",
+            "flax seed",
+            "banana"
+        ],
+        "nutrition": {
+            "Calories": "330",
+            "Sugar": "33",
+            "Fat": "17",
+            "Sodium": "2",
+            "Carbohydrates": "45",
+            "Fiber": "5",
+            "Protein": "5",
+            "Cholesterol": "0"
+        }
+    },
+    {
+        "id": "10017",
+        "name": "Kale Smoothie",
+        "imageURL": "./images/smoothie-17.jpg",
+        "ingredients": [
+            "2 cups frozen bananas",
+            "2 cups packed chopped kale",
+            "1 tablespoon flax meal",
+            "2 Medjool dates, pitted",
+            "optional: 1/2 teaspoon fresh grated ginger",
+            "1.5 cups orange juice"
+        ],
+        "instructions": "Place all ingredients in a high-speed blender. Blend on high until smooth. Option to add more orange juice as needed to thin things out. Serve smoothie immediately and top with your favorite toppings.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "banana",
+            "kale",
+            "flax meal",
+            "Medjool dates",
+            "orange juice"
+        ],
+        "nutrition": {
+            "Calories": "226",
+            "Sugar": "33",
+            "Fat": "2",
+            "Carbohydrates": "51",
+            "Fiber": "6",
+            "Protein": "5"
+        }
+    },
+    {
+        "id": "10018",
+        "name": "Carrot Cake Smoothie",
+        "imageURL": "./images/smoothie-18.jpg",
+        "ingredients": [
+            "8 walnuts",
+            "1 large carrot, roughly chopped (or grated if you don’t have a high speed blender)",
+            "Extra finely grated carrot for mixing in, optional",
+            "1 teaspoon of cinnamon",
+            "Sprinkle of nutmeg, freshly grated is EXTRA delicious",
+            "2 pitted dates",
+            "½–1 cup of liquid, I typically use non-dairy milk and then add in water if I want it a bit more liquidy",
+            "1 teaspoon of vanilla"
+        ],
+        "instructions": "In a high speed blender, blend all ingredients (minus the additional carrot) together until creamy and smooth. If desired, mix in additional finely grated carrot (highly recommend!). Top with a few chopped walnuts and ENJOY!",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "walnuts",
+            "carrot",
+            "cinnamon",
+            "milk"
+        ],
+        "nutrition": {
+            
+        }
     }
 ]
 }

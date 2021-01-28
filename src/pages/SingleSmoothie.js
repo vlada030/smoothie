@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Loading from '../components/Loading';
-import Modal from '../components/Modal';
+import { FiHeart } from "react-icons/fi";
 import { useParams, Link } from 'react-router-dom';
 
 import { useGlobalContext } from '../context';
@@ -14,21 +14,15 @@ const SingleSmoothie = () => {
 
   const {id} = useParams();
   const [loading, setLoading] = useState(false);
-  const [smoothie, setSmoothie] = useState(null);
+  const [smoothie, setSmoothie] = useState({ingredients: [], instructions: ''});
 
   const {setShowModal, setModalMsg} = useGlobalContext();
 
   useEffect(() => {
     setLoading(true);
-    // databaseRef.orderByChild('id').equalTo(id).once("value", (snapshot) => {
-    //   snapshot.forEach(data => {
-    //     setSmoothie(data.val());
-    //     setLoading(false);
-    // });
-    // });
     databaseRef.orderByChild('id').equalTo(id).once("value").then(snapshot => {
+      // mora ovako jer tako firebase uvek vraca neku vrstu array
       snapshot.forEach( data => {
-        console.log(data.val());
         setSmoothie(data.val()); 
         setLoading(false);
     });
@@ -37,17 +31,76 @@ const SingleSmoothie = () => {
     setShowModal(true);
     setModalMsg(error.code);
   })
-  
-  }, [id]);
+  }, [id, setShowModal, setModalMsg]);
 
   if (loading) {
     return <Loading />
   }
 
-  console.log(smoothie);
+  const {name, imageURL, ingredients,instructions, preparation, nutrition} = smoothie;
+
+  let updatedNutrition = [];
+  for (const key in nutrition) {
+      updatedNutrition.push(`${key}: ${nutrition[key]}`)
+  }
+
   return (
-    <section className='section'>
-      <h2>{id}</h2>
+    <section className='section smoothie-section'>
+      <Link to='/' className='btn btn-primary'>
+        bach home
+      </Link>
+      <h2 className='section-title'>{name}</h2>
+      <div className='drink-info'>
+        <img src={`.${imageURL}`} alt={name} />
+
+        <ul className='drink-list'>
+
+          <li className='drink-item'>
+            <span className='drink-name'>ingredients :</span>
+            {ingredients.map((item, index) => {
+              return <p key={item}>
+                      {item}
+                    </p>
+            })}
+          </li>
+
+          <li className='drink-item'>
+            <span className='drink-name'>instructions :</span>
+            {instructions.split('. ').map((item, index) => {
+                return <p key={item}>
+                  <span className='ordinary-number'>{index + 1 + '.'}</span>
+                  {item + '.'}
+                </p>
+            })}
+          </li>
+
+          <li className='drink-item'>
+            <span className='drink-name'>preparation :</span>
+            {preparation}
+          </li>
+
+          <li className='drink-item'>
+            <span className='drink-name'>nutrition :</span>
+            <div className='grid-container'>
+              {updatedNutrition.map((item, index) => {
+                return <p key={index}>
+                          { item.includes('Calories') || item.includes('N/A') ? item  : item + 'gr'}
+                        </p>
+              })}
+            </div>
+          </li>
+
+          <li>
+            <div className='grid-container'>
+              <p>Add it to my favorites!</p>
+              <FiHeart className='nav-favorites-icon'/>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
     </section>
   )
 }

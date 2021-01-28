@@ -1,9 +1,6 @@
-import React, {useEffect} from 'react';
-import {useGlobalContext} from '../context';
+import React from 'react';
 
 const History = () => {
-
-    const {closeSidebar} = useGlobalContext();
 
     return <section className='section about-section'>
                 <h1 className='section-title'>

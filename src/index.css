@@ -20,6 +20,7 @@ Variables
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainRed: #ec1c24;
+  --mainOrange: #ffa500;
   --mainTransition: all 0.3s ease-in-out;
   --mainSpacing: 0.3rem;
   --lightShadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.5);
@@ -539,40 +540,66 @@ smoothie
 .smoothie-section {
   text-align: center;
 }
-.drink {
+.drink-info {
   width: var(--smallWidth);
   max-width: var(--fullWidth);
   margin: 0 auto;
   text-align: left;
 }
-.drink img {
+
+.drink-info img {
   border-radius: var(--mainBorderRadius);
+  height: auto;
 }
-.drink p {
+
+.drink-list {
+  padding-top: 2rem;
+}
+
+.drink-item {
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.8;
+  margin-bottom: 1rem;
 }
-.drink span {
-  margin-right: 0.5rem;
-}
-.drink-data {
+
+.drink-name {
   background: var(--primaryLightColor);
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--primaryColor);
+  margin-right: 0.5rem;
 }
-.drink-info {
-  padding-top: 2rem;
+
+.drink-item p {
+  padding: .5rem;
+  margin: 0;
 }
-@media screen and (min-width: 992px) {
-  .drink {
+
+.ordinary-number {
+  padding: .5rem;
+  padding-left: 0;
+  color: var(--mainRed);
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-container p {
+  align-self: center;
+}
+
+@media screen and (min-width: 800px) {
+  .drink-info {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 3rem;
-    align-items: center;
   }
-  .drink-info {
+  .drink-list {
     padding-top: 0;
   }
 }

@@ -14,8 +14,6 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Modal from './components/Modal';
 
-import {useGlobalContext} from './context';
-
 const App = () => {
 
   return (

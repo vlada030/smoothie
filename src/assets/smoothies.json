@@ -561,6 +561,121 @@
         "nutrition": {
             
         }
+    },
+    {
+        "id": "10019",
+        "name": "Golden Milk Mango Smoothie",
+        "imageURL": "./images/smoothie-19.jpg",
+        "ingredients": [
+            "1 teaspoon turmeric (you could totally leave this out if you want a plain mango smoothie!)",
+            "Frozen mango 1 cup",
+            "¾ cup yogurt any kind",
+            "1 frozen banana or 1 cup of cauliflower",
+            "optional: splash of milk or water if you need help getting the blender going"
+        ],
+        "instructions": "In a high speed blender, combine all of the ingredients and blend until smooth. If needed, add more liquid, a tablespoon at a time, to get the blender going. I like my smoothies on the thicker side but add some milk/ water as needed. Serve and ENJOY.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "mango",
+            "turmeric",
+            "yogurt",
+            "banana"
+        ],
+        "nutrition": {
+            "Calories": "309",
+            "Fat": "2",
+            "Sugar": "44",
+            "Protein": "18"
+        }
+    },
+    {
+        "id": "10020",
+        "name": "Caramel Apple Green Smoothie",
+        "imageURL": "./images/smoothie-20.jpg",
+        "ingredients": [
+            "1 green apple",
+            "2 handfuls of greens",
+            "pinch of sea salt",
+            "1 tablespoon of hemp seeds",
+            "1 frozen banana (could leave this out but sub for a few ice cubes)",
+            "almond milk (could substitute for apple juice for a stronger apple taste)",
+            "sprinkle of cinnamon (or a couple sprinkles)",
+            "2 pitted dates"
+        ],
+        "instructions": "Add all of the ingredients (minus the caramel) to a high speed blender and blend on high. Drizzle a little of the caramel sauce around your glass and pour the smoothie into the glass. Top with a bit more of the caramel sauce and ENJOY.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "apple",
+            "seeds",
+            "almond milk",
+            "banana",
+            "cinnamon"
+        ],
+        "nutrition": {
+            
+        }
+    },
+    {
+        "id": "10021",
+        "name": "Oatmeal Smoothie",
+        "imageURL": "./images/smoothie-21.jpg",
+        "ingredients": [
+            "1/4 cup old-fashioned oats or quick oats",
+            "1 banana chopped into chunks and frozen",
+            "1/2 cup unsweetened almond milk",
+            "1 tablespoon creamy peanut butter",
+            "1/2 tablespoon pure maple syrup plus additional to taste",
+            "1/2 teaspoon pure vanilla extract",
+            "1/8 teaspoon kosher salt don’t skip this, as it makes the oatmeal pop",
+            "ce optional, add at the end if you want a thicker smoothie"
+        ],
+        "instructions": "Place the oats in the bottom of a blender and pulse a few times until finely ground. Add the banana, milk, peanut butter, maple syrup, vanilla, cinnamon, and salt. Blend until smooth and creamy, stopping to scrape down the blender as needed. Taste and add additional sweetener if you’d like a sweeter smoothie. Enjoy immediately.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "oats",
+            "almond milk",
+            "banana",
+            "peanut butter",
+            "vanilla"
+        ],
+        "nutrition": {
+            "Calories": "327",
+            "Sugar": "24",
+            "Fat": "11",
+            "Carbohydrates": "54",
+            "Fiber": "7",
+            "Protein": "8"
+        }
+    },
+    {
+        "id": "10022",
+        "name": "Grapefruit Smoothie",
+        "imageURL": "./images/smoothie-22.jpg",
+        "ingredients": [
+            "1 Winter Sweetz red grapefruit",
+            "2 cups frozen pineapple chunks",
+            "1/3 cup Greek yogurt",
+            "1 Tablespoon coconut oil",
+            "1/4 inch knob of fresh ginger",
+            "grapefruit segments, berries and granola (for topping)"
+        ],
+        "instructions": "Segment grapefruit over a bowl so you can collect all the juice. Set 2-3 segments aside for topping. Add grapefruit segments, grapefruit juice, frozen pineapple, Greek yogurt, coconut oil and fresh ginger into a high-powered blender and blend until smooth. Taste and adjust ingredients based on your preference. If smoothie is too thick you can add a little non-dairy milk. Pour into two glasses and enjoy. Or serve in a bowl with your favorite toppings — grapefruit segments, granola, berries, etc.",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "grapefruit",
+            "pineapple",
+            "Greek yogurt",
+            "coconut",
+            "ginger"
+        ],
+        "nutrition": {
+            "Calories": "234",
+            "Sugar": "28",
+            "Fat": "7",
+            "Carbohydrates": "37",
+            "Fiber": "3",
+            "Protein": "4"
+        }
     }
 ]
 }

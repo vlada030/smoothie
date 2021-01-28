@@ -5,6 +5,15 @@ import { useCallback } from 'react';
 import database from './firebaseConfig';
 const databaseRef = database.database().ref();
 
+// ucitaj liked listu iz local storage
+let initialLikedList = [];
+let initString = localStorage.getItem('likedList');
+if (initString) {
+  if (initString.length) {
+    initialLikedList = initString.split(' ');
+  }
+}
+
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -14,6 +23,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState(''); 
   const [smoothies, setSmoothies] = useState([]);
+  const [likedList, setLikedList] = useState(initialLikedList);
 
   const closeSidebar = () => {
     setShowSidebar(false);
@@ -28,6 +38,18 @@ const AppProvider = ({ children }) => {
     setModalMsg('');
   }
 
+  const toggleLike = (itemId) => {
+    let updatedArr = [];
+
+    if (likedList.includes(itemId)) {
+      updatedArr = likedList.filter(item => item !== itemId)
+    } else {
+      updatedArr = [...likedList, itemId];      
+    }
+    // dodaj u local storage
+    localStorage.setItem('likedList', updatedArr.join(' '));
+    setLikedList(updatedArr);
+  }
 
   useEffect(() => {
     setLoading(true);
@@ -78,7 +100,9 @@ const AppProvider = ({ children }) => {
             loading,
             searchTerm,
             setSearchTerm,
-            smoothies
+            smoothies,
+            likedList,
+            toggleLike
             }}>
           {children}
         </AppContext.Provider>

@@ -144,6 +144,17 @@ Buttons
   background: var(--primaryLightColor);
   border-color: var(--primaryLightColor);
 }
+
+.btn-like {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.btn-like.liked {
+  color: var(--mainRed);
+}
+
 /* 
 ====== 
 Navbar
@@ -530,6 +541,11 @@ Form
 .form-control input::placeholder {
   font-size: 1rem;
   color: var(--primaryLightColor);
+  
+}
+
+.form-control input:focus {
+  outline: none;
 }
 /* 
 ====== 

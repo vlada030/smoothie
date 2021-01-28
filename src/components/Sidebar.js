@@ -8,7 +8,7 @@ import {useGlobalContext} from '../context';
 
 const Sidebar = () => {
 
-    const {showSidebar, closeSidebar} = useGlobalContext();
+    const {showSidebar, closeSidebar, likedList} = useGlobalContext();
 
     return <aside className={showSidebar ? 'sidebar-wrapper show' : 'sidebar-wrapper'} onClick={closeSidebar}>
                 <div className="sidebar">
@@ -36,7 +36,7 @@ const Sidebar = () => {
                     <NavLink to='/TEST' className='sidebar-favorites-container'>
                         <FiHeart className='sidebar-favorites-icon'/>
                         <p className='sidebar-favorites-number'>
-                            33
+                            {likedList.length}
                         </p>
                         </NavLink>
 

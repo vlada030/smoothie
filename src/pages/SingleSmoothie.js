@@ -16,7 +16,7 @@ const SingleSmoothie = () => {
   const [loading, setLoading] = useState(false);
   const [smoothie, setSmoothie] = useState({ingredients: [], instructions: ''});
 
-  const {setShowModal, setModalMsg} = useGlobalContext();
+  const {setShowModal, setModalMsg, likedList, toggleLike} = useGlobalContext();
 
   useEffect(() => {
     setLoading(true);
@@ -44,6 +44,12 @@ const SingleSmoothie = () => {
       updatedNutrition.push(`${key}: ${nutrition[key]}`)
   }
 
+  let helperClass = '';
+  if (likedList.includes(id)) {
+    helperClass = 'btn-like liked';
+  } else {
+    helperClass='btn-like';
+  }
   return (
     <section className='section smoothie-section'>
       <Link to='/' className='btn btn-primary'>
@@ -84,7 +90,7 @@ const SingleSmoothie = () => {
             <div className='grid-container'>
               {updatedNutrition.map((item, index) => {
                 return <p key={index}>
-                          { item.includes('Calories') || item.includes('N/A') ? item  : item + 'gr'}
+                          { item.includes('Calories') || item.includes('N/A') || item.includes('Serving Size') ? item  : item + 'gr'}
                         </p>
               })}
             </div>
@@ -93,7 +99,9 @@ const SingleSmoothie = () => {
           <li>
             <div className='grid-container'>
               <p>Add it to my favorites!</p>
-              <FiHeart className='nav-favorites-icon'/>
+              <button className={helperClass} onClick={() => toggleLike(id)}>
+                <FiHeart className='nav-favorites-icon'/> 
+              </button>
             </div>
 
           </li>

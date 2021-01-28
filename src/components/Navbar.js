@@ -9,7 +9,7 @@ import {useGlobalContext} from '../context';
 
 const Navbar = () => {
 
-  const {openSidebar} = useGlobalContext();
+  const {openSidebar, likedList} = useGlobalContext();
 
   return (
     <nav className='navbar'>
@@ -32,7 +32,7 @@ const Navbar = () => {
         <NavLink to='/TEST' className='nav-favorites'>
 
           <FiHeart className='nav-favorites-icon'/>
-          <p className='nav-favorites-number'>33</p>
+          <p className='nav-favorites-number'>{likedList.length}</p>
 
         </NavLink>
 

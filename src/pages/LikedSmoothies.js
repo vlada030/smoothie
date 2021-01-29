@@ -13,7 +13,7 @@ const LikedSmoothies = () => {
     
       if (likedList.length < 1) {
         return <section className='section'>
-                <h2 className='section-title'>
+                <h2 className='section-title section-title colorized colorized--red'>
                     your liked list is empty
                   </h2>
               </section>

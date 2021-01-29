@@ -181,6 +181,13 @@ Navbar
 
 .logo {
   width: 12rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+} 
+
+.logo:hover {
+  width: 12rem;
+  box-shadow: none;
 }
 
 .nav-favorites {
@@ -223,15 +230,38 @@ Navbar
   width: 1.5rem;
   height: 1.5rem;
   background-color: var(--secondaryColor);
+  border: none;
   border-radius: 50%;
   display: grid;
   place-items: center;
   transition: var(--mainTransition);
-
 }
 
-.nav-favorites-icon:hover + .nav-favorites-number {
+/* .nav-favorites-icon:hover + .nav-favorites-number {
   border: 1px solid var(--mainWhite)
+} */
+
+.nav-lang-button {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 2px;
+  cursor: pointer;
+  transition: var(--mainTransition);
+  box-shadow: var(--lightShadow);
+  transform: scale(1.02);
+}
+
+.nav-lang-button:hover {
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.nav-lang-button:active {
+  outline: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -266,6 +296,10 @@ Navbar
 
   .nav-toggle {
     display: none;
+  }
+
+  .nav-lang-button{
+    display: inline-block;
   }
 }
 
@@ -328,7 +362,8 @@ Sidebar
   margin: 0;
 }
  
-.sidebar-header button {
+.sidebar-header button,
+.sidebar-lang-button {
     background-color: transparent;
     border: none;
 }
@@ -336,11 +371,27 @@ Sidebar
 .sidebar-header .icon {
   font-size: 1.7rem;
   color: var(--primaryDarkColor);
-  transition: var(--mainTransition); 
+  transition: var(--mainTransition);
+   
 }
 
 .sidebar-header .icon:active {
   color: var(--mainBlack);
+}
+
+.sidebar-lang-button {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+
+.sidebar-lang-button:active {
+  box-shadow: none;
 }
 
 .sidebar-links {
@@ -372,6 +423,7 @@ Sidebar
   display: block;
   position: relative;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .sidebar-favorites-icon {
@@ -450,6 +502,11 @@ smoothies List
 
 .colorized--red {
   background-image:linear-gradient(to right, var(--mainOrange), var(--mainRed));
+}
+
+.colorized--green {
+  background-image:linear-gradient(to right, #96f585, #129c6e);
+
 }
 
 .section-img {

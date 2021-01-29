@@ -8,7 +8,9 @@ import {useGlobalContext} from '../context';
 
 const Sidebar = () => {
 
-    const {showSidebar, closeSidebar, likedList} = useGlobalContext();
+    const {showSidebar, closeSidebar, likedList, englishLang, toggleLanguage} = useGlobalContext();
+
+    const languageIcon = englishLang ? './images/sr.png' : './images/en.png';
 
     return <aside className={showSidebar ? 'sidebar-wrapper show' : 'sidebar-wrapper'} onClick={closeSidebar}>
                 <div className="sidebar">
@@ -38,7 +40,11 @@ const Sidebar = () => {
                         <p className='sidebar-favorites-number'>
                             {likedList.length}
                         </p>
-                        </NavLink>
+                    </NavLink>
+
+                    <button className='sidebar-lang-button' onClick={toggleLanguage}>
+                        <img  src={languageIcon} alt='lang'/>
+                    </button>
 
                 </div>
             </aside>

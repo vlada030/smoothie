@@ -32,6 +32,7 @@ const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState(''); 
   const [smoothies, setSmoothies] = useState([]);
   const [likedList, setLikedList] = useState(initialLikedList);
+  const [englishLang, setEnglishLang] = useState(true);
 
   const closeSidebar = () => {
     setShowSidebar(false);
@@ -44,6 +45,10 @@ const AppProvider = ({ children }) => {
   const closeModal = () => {
     setShowModal(false);
     setModalMsg('');
+  }
+
+  const toggleLanguage = () => {
+    setEnglishLang(!englishLang);
   }
 
   // const toggleLike = (itemId) => {
@@ -124,7 +129,9 @@ const AppProvider = ({ children }) => {
             setSearchTerm,
             smoothies,
             likedList,
-            toggleLike
+            toggleLike,
+            englishLang,
+            toggleLanguage
             }}>
           {children}
         </AppContext.Provider>

@@ -9,7 +9,9 @@ import {useGlobalContext} from '../context';
 
 const Navbar = () => {
 
-  const {openSidebar, likedList} = useGlobalContext();
+  const {openSidebar, likedList, englishLang, toggleLanguage} = useGlobalContext();
+  
+  const languageIcon = englishLang ? './images/sr.png' : './images/en.png';
 
   return (
     <nav className='navbar'>
@@ -38,6 +40,10 @@ const Navbar = () => {
 
         <button className='nav-toggle' onClick={openSidebar}>
           <FiGrid className='nav-toggle-icon'/>
+        </button>
+
+        <button className='nav-lang-button' onClick={toggleLanguage}>
+          <img  src={languageIcon} alt='lang'/>
         </button>
 
       </div>

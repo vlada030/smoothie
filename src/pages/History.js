@@ -3,7 +3,7 @@ import React from 'react';
 const History = () => {
 
     return <section className='section about-section'>
-                <h1 className='section-title colorized'>
+                <h1 className='section-title colorized colorized--green'>
                     history
                 </h1>
 

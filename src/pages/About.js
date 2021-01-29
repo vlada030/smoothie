@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section className='section about-section'>
-      <h1 className='section-title colorized'>about</h1>
+      <h1 className='section-title colorized colorized--green'>about</h1>
       <p>
         A smoothie is a drink made from pureed raw fruit and/or vegetables, using a blender. A smoothie often has a liquid base such as water, fruit juice, plant milk, and sometimes dairy products, such as milk, yogurt, ice cream or cottage cheese. Smoothies may be made using other ingredients, such as crushed ice, sweeteners (honey or sugar), vinegar, whey powder, chocolate or nutritional supplements, among others by personal choice.
       </p>

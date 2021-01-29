@@ -6,11 +6,19 @@ import database from './firebaseConfig';
 const databaseRef = database.database().ref();
 
 // ucitaj liked listu iz local storage
+// let initialLikedList = [];
+// let initString = localStorage.getItem('likedList');
+// if (initString) {
+//   if (initString.length) {
+//     initialLikedList = initString.split(' ');
+//   }
+// }
+
 let initialLikedList = [];
 let initString = localStorage.getItem('likedList');
 if (initString) {
   if (initString.length) {
-    initialLikedList = initString.split(' ');
+    initialLikedList = JSON.parse( initString);
   }
 }
 
@@ -38,16 +46,30 @@ const AppProvider = ({ children }) => {
     setModalMsg('');
   }
 
-  const toggleLike = (itemId) => {
-    let updatedArr = [];
+  // const toggleLike = (itemId) => {
+  //   let updatedArr = [];
 
-    if (likedList.includes(itemId)) {
-      updatedArr = likedList.filter(item => item !== itemId)
+  //   if (likedList.includes(itemId)) {
+  //     updatedArr = likedList.filter(item => item !== itemId)
+  //   } else {
+  //     updatedArr = [...likedList, itemId];      
+  //   }
+  //   // dodaj u local storage
+  //   localStorage.setItem('likedList', updatedArr.join(' '));
+  //   setLikedList(updatedArr);
+  // }
+
+  const toggleLike = (smoothieItem) => {
+    let updatedArr = [];
+    const likedListIds = likedList.map(item => item.id);
+
+    if (likedListIds.includes(smoothieItem.id)) {
+      updatedArr = likedList.filter(item => item.id !== smoothieItem.id)
     } else {
-      updatedArr = [...likedList, itemId];      
+      updatedArr = [...likedList, smoothieItem];      
     }
     // dodaj u local storage
-    localStorage.setItem('likedList', updatedArr.join(' '));
+    localStorage.setItem('likedList', JSON.stringify(updatedArr));
     setLikedList(updatedArr);
   }
 
@@ -55,7 +77,7 @@ const AppProvider = ({ children }) => {
     setLoading(true);
     // ubacen setTimeout da nebi stalno ucitavao prilikom svakog inputa, manje server opterecen
     const timeout = setTimeout(() => {
-      console.log(`FETCH`);
+      console.log(`FETCH ALL SMOOTHIES`);
 
       // POSTAVLJANJE FIREBASE
       databaseRef.child('smoothies').once("value")

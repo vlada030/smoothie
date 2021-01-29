@@ -441,6 +441,25 @@ smoothies List
   margin-bottom: 3.5rem;
   margin-top: 1rem;
 }
+
+.colorized {
+  background-image:linear-gradient(to right, #96f585, #129c6e);
+  background-clip:text;
+  color:transparent;
+}
+
+.colorized--red {
+  background-image:linear-gradient(to right, var(--mainOrange), var(--mainRed));
+}
+
+.section-img {
+  margin-bottom: 1.25rem;
+}
+
+.section-subtitle {
+  color: var(--mainOrange);
+}
+
 .smoothies-center {
   width: var(--smallWidth);
   margin: 0 auto;
@@ -450,6 +469,7 @@ smoothies List
   column-gap: 2rem;
   /* align-items: start; */
 }
+
 @media screen and (min-width: 576px) {
   .smoothies-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
@@ -492,6 +512,7 @@ smoothie
 }
 .smoothie-footer h3 {
   font-size: 1.5rem;
+  color: var(--mainOrange)
 }
 .smoothie-footer h4 {
   font-weight: 400;

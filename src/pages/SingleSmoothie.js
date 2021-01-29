@@ -19,6 +19,7 @@ const SingleSmoothie = () => {
   const {setShowModal, setModalMsg, likedList, toggleLike} = useGlobalContext();
 
   useEffect(() => {
+    console.log('FETCH SINGLE SMOOTIE');
     setLoading(true);
     databaseRef.orderByChild('id').equalTo(id).once("value").then(snapshot => {
       // mora ovako jer tako firebase uvek vraca neku vrstu array
@@ -45,7 +46,7 @@ const SingleSmoothie = () => {
   }
 
   let helperClass = '';
-  if (likedList.includes(id)) {
+  if (likedList.map(item => item.id).includes(id)) {
     helperClass = 'btn-like liked';
   } else {
     helperClass='btn-like';
@@ -99,7 +100,7 @@ const SingleSmoothie = () => {
           <li>
             <div className='grid-container'>
               <p>Add it to my favorites!</p>
-              <button className={helperClass} onClick={() => toggleLike(id)}>
+              <button className={helperClass} onClick={() => toggleLike(smoothie)}>
                 <FiHeart className='nav-favorites-icon'/> 
               </button>
             </div>

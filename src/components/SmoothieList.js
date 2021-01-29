@@ -21,7 +21,7 @@ const SmoothieList = () => {
 
   return (
     <section className='section'>
-      <h2 className='section-title'>smoothies</h2>
+      <h2 className='section-title colorized colorized--red'>smoothies</h2>
       <div className='smoothies-center'>
         {smoothies.map(item => {
           return <Smoothie key={item.id} {...item}/>

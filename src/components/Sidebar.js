@@ -33,7 +33,7 @@ const Sidebar = () => {
                         )}
                     </ul>
 
-                    <NavLink to='/TEST' className='sidebar-favorites-container'>
+                    <NavLink to='/smoothies' className='sidebar-favorites-container'>
                         <FiHeart className='sidebar-favorites-icon'/>
                         <p className='sidebar-favorites-number'>
                             {likedList.length}

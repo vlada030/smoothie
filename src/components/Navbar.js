@@ -29,7 +29,7 @@ const Navbar = () => {
           })}
         </ul>
 
-        <NavLink to='/TEST' className='nav-favorites'>
+        <NavLink to='/smoothies' className='nav-favorites'>
 
           <FiHeart className='nav-favorites-icon'/>
           <p className='nav-favorites-number'>{likedList.length}</p>

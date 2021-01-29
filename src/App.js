@@ -7,6 +7,7 @@ import About from './pages/About';
 import HowTo from './pages/HowTo';
 import History from './pages/History';
 import SingleSmoothie from './pages/SingleSmoothie';
+import LikedSmoothies from './pages/LikedSmoothies';
 import Error from './pages/Error';
 
 // import components
@@ -39,9 +40,13 @@ const App = () => {
           <HowTo />
         </Route>
 
+        <Route path='/smoothies'>
+          <LikedSmoothies />
+        </Route>
+
         <Route path='/smoothie/:id'>
           <SingleSmoothie />
-        </Route>
+        </Route>        
 
         <Route path='*'>
           <Error />

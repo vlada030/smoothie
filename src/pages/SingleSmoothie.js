@@ -4,19 +4,25 @@ import { FiHeart } from "react-icons/fi";
 import { useParams, Link } from 'react-router-dom';
 
 import { useGlobalContext } from '../context';
+import {singleSmoothie} from '../assets/languages/smoothieAllLang';
 
 
 // import podesenog firebase objekta
 import database from '../firebaseConfig';
-const databaseRef = database.database().ref('smoothies');
 
 const SingleSmoothie = () => {
-
+  
   const {id} = useParams();
   const [loading, setLoading] = useState(false);
   const [smoothie, setSmoothie] = useState({ingredients: [], instructions: ''});
+  
+  
+  const {setShowModal, setModalMsg, likedList, toggleLike, englishLang} = useGlobalContext();
+  
+  const databaseRefChoice = englishLang ? 'smoothies' : 'smoothiesSER';
+  const databaseRef = database.database().ref(databaseRefChoice);
 
-  const {setShowModal, setModalMsg, likedList, toggleLike} = useGlobalContext();
+  const langOption = englishLang ? singleSmoothie.en : singleSmoothie.sr;
 
   useEffect(() => {
     console.log('FETCH SINGLE SMOOTIE');
@@ -32,7 +38,7 @@ const SingleSmoothie = () => {
     setShowModal(true);
     setModalMsg(error.code);
   })
-  }, [id, setShowModal, setModalMsg]);
+  }, [id, setShowModal, setModalMsg, englishLang]);
 
   if (loading) {
     return <Loading />
@@ -54,7 +60,7 @@ const SingleSmoothie = () => {
   return (
     <section className='section smoothie-section'>
       <Link to='/' className='btn btn-primary'>
-        bach home
+        {langOption.btn_back}
       </Link>
       <h2 className='section-title'>{name}</h2>
       <div className='drink-info'>
@@ -63,7 +69,7 @@ const SingleSmoothie = () => {
         <ul className='drink-list'>
 
           <li className='drink-item'>
-            <span className='drink-name'>ingredients :</span>
+            <span className='drink-name'>{langOption.ingr}</span>
             {ingredients.map((item, index) => {
               return <p key={item}>
                       {item}
@@ -72,7 +78,7 @@ const SingleSmoothie = () => {
           </li>
 
           <li className='drink-item'>
-            <span className='drink-name'>instructions :</span>
+            <span className='drink-name'>{langOption.instr}</span>
             {instructions.split('. ').map((item, index) => {
                 return <p key={item}>
                   <span className='ordinary-number'>{index + 1 + '.'}</span>
@@ -82,16 +88,16 @@ const SingleSmoothie = () => {
           </li>
 
           <li className='drink-item'>
-            <span className='drink-name'>preparation :</span>
+            <span className='drink-name'>{langOption.prep}</span>
             {preparation}
           </li>
 
           <li className='drink-item'>
-            <span className='drink-name'>nutrition :</span>
+            <span className='drink-name'>{langOption.nutr}</span>
             <div className='grid-container'>
               {updatedNutrition.map((item, index) => {
                 return <p key={index}>
-                          { item.includes('Calories') || item.includes('N/A') || item.includes('Serving Size') ? item  : item + 'gr'}
+                          { item.includes('Calories') || item.includes('N/A') || item.includes('Serving Size') || item.includes('Kalorije')? item  : item + 'gr'}
                         </p>
               })}
             </div>
@@ -99,7 +105,7 @@ const SingleSmoothie = () => {
 
           <li>
             <div className='grid-container'>
-              <p>Add it to my favorites!</p>
+              <p className='likes-text'>{langOption.fav_title}</p>
               <button className={helperClass} onClick={() => toggleLike(smoothie)}>
                 <FiHeart className='nav-favorites-icon'/> 
               </button>

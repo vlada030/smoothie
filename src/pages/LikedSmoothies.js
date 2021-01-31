@@ -1,11 +1,15 @@
 import React from 'react';
 import Smoothie from '../components/Smoothie';
 import Loading from '../components/Loading';
+import {likedSmoothies} from '../assets/languages/smoothieAllLang';
+
 import { useGlobalContext } from '../context';
 
 const LikedSmoothies = () => {
 
-    const {loading, likedList} = useGlobalContext();
+    const {loading, likedList, englishLang} = useGlobalContext();
+    const langOption = englishLang ? likedSmoothies.en : likedSmoothies.sr;
+
 
     if (loading) {
         return <Loading />
@@ -14,7 +18,7 @@ const LikedSmoothies = () => {
       if (likedList.length < 1) {
         return <section className='section'>
                 <h2 className='section-title section-title colorized colorized--red'>
-                    your liked list is empty
+                    {langOption.info}
                   </h2>
               </section>
       }

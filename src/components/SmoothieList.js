@@ -1,11 +1,13 @@
 import React from 'react';
 import Smoothie from './Smoothie';
 import Loading from './Loading';
+import {smoothieList} from '../assets/languages/smoothieAllLang';
 import { useGlobalContext } from '../context';
 
 const SmoothieList = () => {
 
-  const {loading, smoothies} = useGlobalContext();
+  const {loading, smoothies, englishLang} = useGlobalContext();
+  const langOption = englishLang ? smoothieList.en : smoothieList.sr;
 
   if (loading) {
     return <Loading />
@@ -13,9 +15,7 @@ const SmoothieList = () => {
 
   if (smoothies.length < 1) {
     return <section className='section'>
-            <h2 className='section-title'>
-                No Smoothies Matched Your Search Criteria
-              </h2>
+            <h2 className='section-title'>{langOption.info}</h2>
           </section>
   }
 

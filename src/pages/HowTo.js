@@ -1,5 +1,5 @@
 import React from 'react';
-import {howTo} from '../assets/language';
+import {howTo} from '../assets/languages/howToLang';
 
 import {useGlobalContext} from '../context';
 
@@ -8,7 +8,7 @@ import {useGlobalContext} from '../context';
 const HowTo = () => {
 
   const {englishLang} = useGlobalContext();
-  const langObj = englishLang ? howTo.en : howTo.sr;
+  const langOption = englishLang ? howTo.en : howTo.sr;
 
   return (
     // <section className='section about-section'>
@@ -38,31 +38,31 @@ const HowTo = () => {
 
     // </section>
     <section className='section about-section'>
-      <h1 className='section-title colorized colorized--green'>{langObj.title}</h1>
+      <h1 className='section-title colorized colorized--green'>{langOption.title}</h1>
 
-      <p>{langObj.par_1}</p>
+      <p>{langOption.par_1}</p>
 
-      <p>{langObj.par_2}</p>
+      <p>{langOption.par_2}</p>
 
       <img className='section-img' src='../images/about-1.jpg' alt='img-1' />        
         
-      <h3 className='section-subtitle'>{langObj.subtitle_1}</h3>
-      <p>{langObj.par_3}</p>
+      <h3 className='section-subtitle'>{langOption.subtitle_1}</h3>
+      <p>{langOption.par_3}</p>
         
-      <p>{langObj.par_4}</p>
+      <p>{langOption.par_4}</p>
 
-      <p>{langObj.par_5}</p>
+      <p>{langOption.par_5}</p>
 
-      <h3 className='section-subtitle'>{langObj.subtitle_2}</h3>
+      <h3 className='section-subtitle'>{langOption.subtitle_2}</h3>
 
-      <p>{langObj.par_6}</p>
+      <p>{langOption.par_6}</p>
 
-      <p>{langObj.par_7}</p>
+      <p>{langOption.par_7}</p>
 
       <img className='section-img' src='../images/about-2.jpg' alt='img-2' />   
 
-      <h3 className='section-subtitle'>{langObj.subtitle_3}</h3>
-      <p>{langObj.par_8}</p>
+      <h3 className='section-subtitle'>{langOption.subtitle_3}</h3>
+      <p>{langOption.par_8}</p>
 
     </section>
   )

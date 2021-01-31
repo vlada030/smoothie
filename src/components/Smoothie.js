@@ -1,8 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import {smoothie} from '../assets/languages/smoothieAllLang';
+import {useGlobalContext} from '../context';
 
 const Smoothie = (props) => {
-
+  const {englishLang} = useGlobalContext();
+  const langOption = englishLang ? smoothie.en : smoothie.sr;
   const {id, name, imageURL, hashtag, preparation} = props;
 
   return (
@@ -13,9 +16,9 @@ const Smoothie = (props) => {
       <div className='smoothie-footer'>
         <h3>{name}</h3>
         <h4>{`${hashtag.join(', ')}`}</h4>
-        <p>{`Time to prepare: ${preparation}`}</p>
+        <p>{`${langOption.time}: ${preparation}`}</p>
         <Link to={`/smoothie/${id}`} className='btn btn-primary btn-details'>
-          Read more
+          {langOption.btn_text}
         </Link>
       </div>
     </article>

@@ -11,7 +11,9 @@ Variables
   --primaryLightColor: #e1ade1;
   --primaryColor: #d46dd6;
   --primaryDarkColor: #b83dba;
-  --secondaryColor: #c4ff0e;
+  --secondaryLightColor: #c4ff0e;
+  --secondaryColor:#96f585 ;
+  --secondaryDarkColor: #129c6e;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBackground: #f1f5f8;
@@ -181,13 +183,13 @@ Navbar
 
 .logo {
   width: 12rem;
-  box-shadow: var(--lightShadow);
+  box-shadow: none;
   transition: var(--mainTransition);
 } 
 
 .logo:hover {
   width: 12rem;
-  box-shadow: none;
+  box-shadow: var(--lightShadow);
 }
 
 .nav-favorites {
@@ -229,7 +231,7 @@ Navbar
   right:0;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--secondaryColor);
+  background-color: var(--secondaryLightColor);
   border: none;
   border-radius: 50%;
   display: grid;
@@ -260,7 +262,7 @@ Navbar
   transform: scale(0.98);
 }
 
-.nav-lang-button:active {
+.nav-lang-button:focus {
   outline: none;
 }
 
@@ -352,10 +354,10 @@ Sidebar
 .sidebar-header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   color: var(--primaryDarkColor);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .sidebar-header h4 {
@@ -438,7 +440,7 @@ Sidebar
   height: 1.5rem;
   width: 1.5rem;
   transform: translate(-57%);
-  background-color: var(--secondaryColor);
+  background-color: var(--secondaryLightColor);
   border-radius: 50%;
 
 }
@@ -495,7 +497,7 @@ smoothies List
 }
 
 .colorized {
-  background-image:linear-gradient(to right, #96f585, #129c6e);
+  background-image:linear-gradient(to right, var(--secondaryColor), var(--secondaryDarkColor));
   background-clip:text;
   color:transparent;
 }
@@ -505,7 +507,7 @@ smoothies List
 }
 
 .colorized--green {
-  background-image:linear-gradient(to right, #96f585, #129c6e);
+  background-image:linear-gradient(to right,var(--secondaryColor), var(--secondaryDarkColor));
 
 }
 
@@ -618,12 +620,18 @@ Form
 
 .form-control input::placeholder {
   font-size: 1rem;
-  color: var(--primaryLightColor);
-  
+  font-style: oblique;
+  color: var(--primaryLightColor);  
+}
+
+.form-control input:focus::placeholder {
+  color: var(--secondaryColor);  
 }
 
 .form-control input:focus {
   outline: none;
+  border-bottom: 2px solid var(--secondaryColor);
+
 }
 /* 
 ====== 
@@ -652,7 +660,7 @@ smoothie
 
 .drink-item {
   font-weight: bold;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -687,6 +695,11 @@ smoothie
   align-self: center;
 }
 
+.likes-text {
+  font-size: 1.5rem;
+  color: var(--primaryDarkColor);
+}
+
 @media screen and (min-width: 800px) {
   .drink-info {
     display: grid;
@@ -704,8 +717,8 @@ smoothie
   width: 4.5rem;
   margin: auto;
   margin-top: 5rem;
-  border-top: 0.1rem solid var(--secondaryColor);
-  border-right: 0.1rem solid turquoise;
+  border-top: 0.1rem solid var(--secondaryLightColor);
+  border-right: 0.1rem solid var(--secondaryColor);
   border-bottom: 0.1rem solid var(--mainRed);
   border-left: 0.1rem solid var(--primaryLightColor);
   border-radius: 50%;

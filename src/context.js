@@ -51,19 +51,6 @@ const AppProvider = ({ children }) => {
     setEnglishLang(!englishLang);
   }
 
-  // const toggleLike = (itemId) => {
-  //   let updatedArr = [];
-
-  //   if (likedList.includes(itemId)) {
-  //     updatedArr = likedList.filter(item => item !== itemId)
-  //   } else {
-  //     updatedArr = [...likedList, itemId];      
-  //   }
-  //   // dodaj u local storage
-  //   localStorage.setItem('likedList', updatedArr.join(' '));
-  //   setLikedList(updatedArr);
-  // }
-
   const toggleLike = (smoothieItem) => {
     let updatedArr = [];
     const likedListIds = likedList.map(item => item.id);
@@ -78,6 +65,8 @@ const AppProvider = ({ children }) => {
     setLikedList(updatedArr);
   }
 
+  const databaseRefChoice = englishLang ? 'smoothies' : 'smoothiesSER';
+
   useEffect(() => {
     setLoading(true);
     // ubacen setTimeout da nebi stalno ucitavao prilikom svakog inputa, manje server opterecen
@@ -85,13 +74,14 @@ const AppProvider = ({ children }) => {
       console.log(`FETCH ALL SMOOTHIES`);
 
       // POSTAVLJANJE FIREBASE
-      databaseRef.child('smoothies').once("value")
+      databaseRef.child(databaseRefChoice).once("value")
         .then(snapshot => {
             const data = snapshot.val();
             const filteredData = data.filter(element => {
               // bolje ingredients da se pretrazuje nego hashtag
               // pretvaranjem u string izbegava se delom jednina/mnozina reci
-              return element.ingredients.join('').toLowerCase().includes(searchTerm)
+              const overallString = [...element.ingredients, ...element.hashtag].join('').toLowerCase();
+              return overallString.includes(searchTerm)
             });
 
             setSmoothies(filteredData);
@@ -113,7 +103,7 @@ const AppProvider = ({ children }) => {
 
     return () => clearTimeout(timeout);
     
-  }, [searchTerm]);
+  }, [searchTerm, englishLang]);
 
   return <AppContext.Provider value={{
             showSidebar,

@@ -626,8 +626,7 @@
             "1 tablespoon creamy peanut butter",
             "1/2 tablespoon pure maple syrup plus additional to taste",
             "1/2 teaspoon pure vanilla extract",
-            "1/8 teaspoon kosher salt don’t skip this, as it makes the oatmeal pop",
-            "ce optional, add at the end if you want a thicker smoothie"
+            "1/8 teaspoon kosher salt don’t skip this, as it makes the oatmeal pop"
         ],
         "instructions": "Place the oats in the bottom of a blender and pulse a few times until finely ground. Add the banana, milk, peanut butter, maple syrup, vanilla, cinnamon, and salt. Blend until smooth and creamy, stopping to scrape down the blender as needed. Taste and add additional sweetener if you’d like a sweeter smoothie. Enjoy immediately.",
         "preparation": "5 minutes",
@@ -826,6 +825,834 @@
             "Carbohydrates": "16",
             "Fiber": "3",
             "Protein": "6"
+        }
+    }
+],
+
+"smoothiesSER": [
+    {
+        "id": "10000",
+        "name": "Zeleni Smoothie",
+        "imageURL": "./images/smoothie-0.jpg",
+        "ingredients": [
+            "1 smrznuti avokado srednje veličine",
+            "1 šolja spanaća",
+            "1 šolja isečenih smrznitih banana",
+            "1 supena kašika mlevenog lana",
+            "1/4 šolja smrznutog karfiola",
+            "3 urme bez koštica" ,   
+            "1.25 šolje nezaslađenog bademovog mleka (ili više, po ukusu)"
+        ],
+        "instructions": "Sve sastojke za zeleni smoothie stavite u brzi blender ili Vitamik i blendajte dok ne postane homogeno.",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "avokado",
+            "spanać",
+            "banana",
+            "mleveni lan",
+            "karfiol",
+            "urma" ,   
+            "bademovo mleko"],
+        "nutrition": {
+            "Kalorije": "327",
+            "Secer": "34",
+            "Natrijum": "135",
+            "Masnoce": "14",
+            "Ugljeni hidrati": "53",
+            "Vlakna": "12",
+            "Proteini": "5"
+        }
+    },
+    {
+        "id": "10001",
+        "name": "Jagoda Smoothie",
+        "imageURL": "./images/smoothie-1.jpg",
+        "ingredients": [
+            "1.5 šolje smrznutih jagoda",
+            "1/2 srednja banana",
+            "1/2 šolja običnog nemasnog grčkog jogurta",
+            "1 šolja 100% soka od narandže"
+        ],
+        "instructions": "Stavite sve sastojke u brzi blender i mešajte na visokoj brzini dok ne postane homogeno. Mogućnost dodavanja još malo soka od pomorandže u zavisnosti od toga koliko gusti / tanki smoothie volite. Poslužite odmah.",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "jagode",
+            "banana",
+            "Grčki jogurt",
+            "sok od narandže"
+        ],
+        "nutrition": {
+            "Kalorije": "214",
+            "Šećer": "34",
+            "Masnoće": "0",
+            "Ugljeni hidrati": "45",
+            "Vlakna": "4",
+            "Proteini": "9"
+        }
+    },
+    {
+        "id": "10002",
+        "name": "Kikiriki Banana Smoothie",
+        "imageURL": "./images/smoothie-2.jpg",
+        "ingredients": [
+            "2 šolje smrznute isečene banane",
+            "1/2 šolje grčkog jogurta bez masti",
+            "1 šolja nezaslađenog bademovog mleka",
+            "1 kašičica ekstrakta vanile",
+            "2 kašike prirodnog putera od kikirikija"
+        ],
+        "instructions": "Stavite sve sastojke u brzi blender i mešajte na visokoj brzini dok ne postane homogeno. Po potrebi dodajte još bademovog mleka. Poslužite odmah.",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "vanila",
+            "banana",
+            "Grčki jogurt",
+            "kikiriki buter",
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "295",
+            "Šećer": "21",
+            "Masnoće": "10",
+            "Ugljeni hidrati": "40",
+            "Vlakna": "6",
+            "Proteini": "12"
+        }
+    },
+    {
+        "id": "10003",
+        "name": "Jagoda Banana Spanać Smoothie",
+        "imageURL": "./images/smoothie-3.jpg",
+        "ingredients": [
+            "2 šolje smrznute isečene banane",
+            "2 šolje smrznutih celih jagoda",
+            "4 šolje svežeg spanaća",
+            "4 kašičice chia semena",
+            "2 kašike vanilinog proteina u prahu (bilo koje vrste)",
+            "1/2 šolje nezaslađenog bademovog mleka"
+        ],
+        "instructions": "Prvo obložite pleh papirom za pečenje. Zatim, ravnomerno rasporedite 2 šolje isečenih banana, 2 šolje celih jagoda. Stavite u zamrzivač na oko 2 sata ili dok se potpuno ne zamrzne. Zatim uzmite 4 kvartene vrećice sa zamrzivačem i na prednju stranu napišite datum i Zeleni smuti od jagode i banane. U svaku kesicu dodajte 1 šolju smrznutog voća, šaku spanaća i kašičicu chia semenki. Pre zaptivanja, proverite da li iscedite što više vazduha kako biste sprečili opekotine zamrzivača. Zatvorite i stavite u zamrzivač za kasniju upotrebu. Jednom kada ste spremni za blendanje, ispraznite sadržaj kesice od špinata u brzi blender. Zatim dodajte oko 1/2 šolje bademovog mleka i 2 kašike vašeg omiljenog proteinskog praha. Mešajte na visokoj temperaturi oko 1 minut ili dok se sve ne pomeša.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "banana",
+            "jagoda",
+            "spanać",
+            "chia semenke",
+            "vanila",
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "196",
+            "Šećer": "14",
+            "Masnoće": "4",
+            "Ugljeni hidrati": "23",
+            "Vlakna": "6",
+            "Proteini": "16"
+        }
+    },
+    {
+        "id": "10004",
+        "name": "Bobičasti Protein Smoothie",
+        "imageURL": "./images/smoothie-4.jpg",
+        "ingredients": [
+            "1,5 šolje smrznute mešavine bobica",
+            "1 smrznuta banana srednje veličine",
+            "1/2 kašike chia semenki",
+            "1,25 šolje nezaslađenog bademovog mleka"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender i mešajte dok ne postane homogeno.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "mešavina bobica",
+            "banana",
+            "chia semenke", 
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "196",
+            "Šećer": "16",
+            "Masnoće": "3",
+            "Ugljeni hidrati": "32",
+            "Vlakna": "8",
+            "Proteini": "12"
+        }
+    },
+    {
+        "id": "10005",
+        "name": "Zdravi Banana Protein Smothie",
+        "imageURL": "./images/smoothie-5.jpg",
+        "ingredients": [
+            "¾ šolje nemasnog grčkog jogurta, smrznutog na kockice",
+            "2 šolje smrznute isečene banane",
+            "1 kašičica ekstrakta vanile",
+            "¼ šolje belančevina u prahu u vanili (koristili smo sirovi organski protein Garden of Life)",
+            "2 šolje mleka, bilo koje vrste ( nezaslađeno bademovo mleko )"
+        ],
+        "instructions": "Prvo zamrznite ¾ šolje nemasnog grčkog jogurta u posudi za led. Kada se grčki jogurt potpuno zamrzne, stavite sve sastojke za zdravi šejk od banane u blender velike brzine. Mešajte dok ne postane homogeno i poslužite sa omiljenim prelivima.",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "Grčki jogurt",
+            "banana",
+            "vanila", 
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "163",
+            "Šećer": "10",
+            "Masnoće": "2",
+            "Ugljeni hidrati": "19",
+            "Vlakna": "3",
+            "Proteini": "16"
+        }
+    },
+    {
+        "id": "10006",
+        "name": "Jagoda Banana Smoothie sa kikiriki buterom",
+        "imageURL": "./images/smoothie-6.jpg",
+        "ingredients": [
+            "1 šolja smrznutih jagoda",
+            "1 šolja smrznute isečene banane",
+            "1/4 šolje nemasnog običnog grčkog jogurta",
+            "2 kašike potpuno prirodnog kremastog putera od kikirikija",
+            "1 kašika mlevenog semena lana",
+            "1 kašičica ekstrakta vanile",
+            "1 šolja nezaslađenog bademovog mleka"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender i mešajte dok ne postane homogeno. Poslužite uz dodatak kikiriki putera i svežeg voća.",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "jagode",
+            "Grčki jogurt",
+            "banana",
+            "kikiriki buter",
+            "vanila", 
+            "laneno seme",
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "223",
+            "Šećer": "24",
+            "Masnoće": "22",
+            "Ugljeni hidrati": "35",
+            "Vlakna": "6",
+            "Proteini": "9"
+        }
+    },
+    {
+        "id": "10007",
+        "name": "Bundeva Bobice Smoothie",
+        "imageURL": "./images/smoothie-7.jpg",
+        "ingredients": [
+            "2 kašike pirea od bundeve",
+            "1 kašika putera",
+            "1 šolja smrznute borovnice",
+            "1/2 smrznute banane",
+            "1/2 kašike obroka od semena lana",
+            "1/2 kašičice začina za pitu od bundeve",
+            "1 šolja bademovog mleka, nezaslađeno"
+        ],
+        "instructions": "Stavite sve sastojke u blender velike brzine i blendajte na visokoj brzini dok ne postane homogeno. Ostružite stranice blendera i dodajte dodatno bademovo mleko (1 kašičica odjednom) ako je smoothie pregust. Mešajte dok ne postane glatko. Poslužite sa domaćim prelivima od granole ili voća i uživajte!",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "bundeva",
+            "buter",
+            "borovnice",
+            "banana",
+            "vanila", 
+            "seme lana",
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "287",
+            "Šećer": "23",
+            "Masnoće": "12",
+            "Ugljeni hidrati": "N/A",
+            "Vlakna": "9",
+            "Proteini": "7"
+        }
+    },
+    {
+        "id": "10008",
+        "name": "Čokolada Protein Smoothie",
+        "imageURL": "./images/smoothie-8.jpg",
+        "ingredients": [
+            "1 šolja smrznute borovnice",
+            "1 smrznuta banana srednje veličine",
+            "1/4 šolje čokoladnog proteinskog praha (bilo koje vrste!)",
+            "1 kašika kakao praha",
+            "1/4 šolje nemasnog grčkog jogurta",
+            "2 kašike putera",
+            "1/2 kašike mlevenog lanenog semena",
+            "1 šolja nezaslađenog običnog bademovog mleka"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender. Mešajte na visokoj brzini oko 1 minut, zaustavljajući se da biste strugali po stranama. Možda će vam trebati dodati više mleka da se razređuje po potrebi. Služite odmah!",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "borovnice",
+            "čokolada protein u prahu",
+            "kakao u prahu",
+            "banana",
+            "Grčki jogurt", 
+            "seme lana",
+            "bademovo mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "279",
+            "Šećer": "18",
+            "Masnoće": "10",
+            "Ugljeni hidrati": "37",
+            "Vlakna": "6",
+            "Proteini": "17"
+        }
+    },
+    {
+        "id": "10009",
+        "name": "Bundeva Smoothie",
+        "imageURL": "./images/smoothie-9.jpg",
+        "ingredients": [
+            "2 smrznute banane srednje veličine",
+            "1/2 šolje nezaslađenog pirea od bundeve",
+            "3/4 šolje kafe, hladna (upravo sam iskoristila ostatke jutarnjeg lonca!)",
+            "3/4 šolje mleka, bilo koje vrste",
+            "1/2 kašičice začina od bundeve",
+            "1 kašičica javorovog sirupa"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender. Mešajte na visokoj temperaturi oko 1 minutu, zaustavljajući se da biste strugali stranice ako je potrebno. Poslužite odmah uz omiljeni šlag.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "banana",
+            "bundeva",
+            "kafa",
+            "mleko"
+        ],
+        "nutrition": {
+            "Kalorije": "171",
+            "Šećer": "20",
+            "Masnoće": "2",
+            "Ugljeni hidrati": "38",
+            "Vlakna": "5",
+            "Proteini": "3"
+        }
+    },
+    {
+        "id": "10010",
+        "name": "Borovnica Banana Smoothie",
+        "imageURL": "./images/smoothie-10.jpg",
+        "ingredients": [
+            "1 šolja smrznute borovnice",
+            "1 šolja smrznutih banana narezanih na kriške",
+            "1 kašika lanenog semena",
+            "1 šolja nezaslađenog bademovog mleka",
+            "1 kašičica ekstrakta vanile"
+        ],
+        "instructions": "Stavite sve sastojke u blender velike brzine i blendajte na visokoj brzini dok ne postane homogeno.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "banana",
+            "borovnice",
+            "seme lana",
+            "bademovo mleko",
+            "vanila"
+        ],
+        "nutrition": {
+            "Kalorije": "147",
+            "Šećer": "17",
+            "Masnoće": "3",
+            "Ugljeni hidrati": "29",
+            "Vlakna": "5",
+            "Proteini": "3",
+            "Natrijum": "92" 
+        }
+    },
+    {
+        "id": "10011",
+        "name": "Zeleni Smoothie sa narom",
+        "imageURL": "./images/smoothie-11.jpg",
+        "ingredients": [
+            "1/2 šolje smrznutih jagoda",
+            "1 smrznuta banana, srednja",
+            "1 šolja svežeg kelja",
+            "1/2 šolje grčkog jogurta",
+            "1/2 šolje soka od nara",
+            "1/2 šolje vode",
+            "1 kašika proteina u prahu od vanile (bilo koje vrste!)",
+            "dodaci: seme konoplje, orah od šipka, pistacije i tamna čokolada"
+        ],
+        "instructions": "Sve sastojke stavite u brzi procesor hrane i mešajte dok ne postane homogeno. Možda će vam trebati da dodate malo više soka od nara, u zavisnosti od toga koliko volite vaš smoothie.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "smrznute jagode",
+            "banana",
+            "kelj",
+            "nar",
+            "Grčki jogurt"
+        ],
+        "nutrition": { }
+    },
+    {
+        "id": "10012",
+        "name": "Jabuka Smoothie I",
+        "imageURL": "./images/smoothie-12.jpg",
+        "ingredients": [
+            "1 zamrznuta banana, mala",
+            "1/2 šolje nemasnog grčkog jogurta od vanile",
+            "2/3 šolje sosa od jabuke, nezaslađeni",
+            "1/4 šolje valjanog ovsa",
+            "1 kašičica cimeta",
+            "1 kašičica ekstrakta vanile",
+            "1/2 šolje bademovog mleka, nezaslađeno",
+            "opcionalno: šaka svežeg spanaća ili kelja"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender. Mešajte dok ne postane homogeno. Poslužite sa puno fiksiranja na vrhu!",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "banana",
+            "Grčki jogurt",
+            "jabuka sos",
+            "bademovo mleko",
+            "valjani ovas",
+            "vanila"
+        ],
+        "nutrition": {
+            "Kalorije": "354",
+            "Šećer": "37",
+            "Masnoće": "3",
+            "Ugljeni hidrati": "61",
+            "Vlakna": "8",
+            "Proteini": "15"
+        }
+    },
+    {
+        "id": "10013",
+        "name": "Jabuka Smoothie II",
+        "imageURL": "./images/smoothie-13.jpg",
+        "ingredients": [
+            "Šolja sosa od jabuka od 90 gr",
+            "1 šolja nezaslađenog bademovog mleka (ili bilo koje vrste mleka)",
+            "2 kašike valjanog ovsa",
+            "2 kašike putera od oraha (bilo koje vrste)",
+            "1 kašičica mlevenog semena lana",
+            "1 kašičica javorovog sirupa",
+            "1/4 kašičice mlevenog cimeta"
+        ],
+        "instructions": "Prvo zamrznite šolje sosa od jabuka od 90 gr najmanje 2 sata ili preko noći. Jednom zamrznute, stavite šoljice jabuka nekoliko sekundi pod vruću vodu da biste ih uklonili iz plastike. Zatim stavite u blender velike brzine. Dodajte ostatak sastojaka i pokrijte. Mešajte na visokoj temperaturi oko minut ili dok ne postane homogeno.",
+        "preparation": "2 sata",
+        "hashtag": [
+            "orah",
+            "jabuka sos",
+            "bademovo mleko",
+            "ovas",
+            "javorov sirup",
+            "seme lana"
+        ],
+        "nutrition": {
+            
+        }
+    },
+    {
+        "id": "10014",
+        "name": "Jabuka Ananas Smoothie",
+        "imageURL": "./images/smoothie-14.png",
+        "ingredients": [
+            "1,5 šolje smrznutih komadića ananasa",
+            "1,5 šolje smrznutih jagoda",
+            "1/2 šolje grčkog jogurta od vanile",
+            "1 kašičica ekstrakta vanile",
+            "1,5 šolje bademovog mleka, nezaslađeno (ili više po ukusu)"
+        ],
+        "instructions": "Sve sastojke za vaš smoothie od ananasa od jagoda stavite u brzi blender. Mešajte na visokoj brzini dok ne postane homogeno. U zavisnosti od toga koliko je vaše voće smrznuto, možda ćete morati da dodate još bademovog mleka. Poslužite sa ekstra svežim komadićima ananasa na dnu.",
+        "preparation": "10 minutes",
+        "hashtag": [
+            "ananas",
+            "Grčki jogurt",
+            "jagode",
+            "bademovo mleko",
+            "vanila"
+        ],
+        "nutrition": {
+            "Kalorije": "165",
+            "Šećer": "2",
+            "Masnoće": "2",
+            "Ugljeni hidrati": "30",
+            "Vlakna": "5",
+            "Proteini": "8"
+        }
+    },
+    {
+        "id": "10015",
+        "name": "Magični Smoothie od narandže",
+        "imageURL": "./images/smoothie-15.jpg",
+        "ingredients": [
+            "1 šolja smrznutih kriški banane",
+            "1 kašičica ekstrakta vanile",
+            "1 šolja 100% soka pomorandže",
+            "opcionalno: 1/2 šolje leda",
+            "opcionalno: 1 kašika proteina u prahu od vanile, šlag od kokosa, korica pomorandže"
+        ],
+        "instructions": "Stavite smrznute banane, ekstrakt vanile i sok od pomorandže u blender velike brzine i blendajte dok ne postane homogeno. U ovom trenutku možete dodati pregršt leda (u zavisnosti od preferencije debljine) i / ili druge dodatke poput proteina vanile u prahu i sveže korice narandže. Mešajte još jednom, a zatim odmah poslužite.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "banana",
+            "vanila",
+            "narandža"
+        ],
+        "nutrition": {
+            "Kalorije": "236",
+            "Šećer": "38",
+            "Masnoće": "0",
+            "Ugljeni hidrati": "56",
+            "Vlakna": "3",
+            "Proteini": "3"
+        }
+    },
+    {
+        "id": "10016",
+        "name": "Mango Smoothie",
+        "imageURL": "./images/smoothie-16.jpg",
+        "ingredients": [
+            "2 šolje smrznutih kriški manga",
+            "1 kokosovo mleko u konzervi od 400gr",
+            "1/2 kašike lanenog semena",
+            "1 velika smrznuta banana"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender. Mešajte na visokoj brzini dok ne postane homogeno. Jedite odmah.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "mango",
+            "kokos",
+            "seme lana",
+            "banana"
+        ],
+        "nutrition": {
+            "Kalorije": "330",
+            "Šećer": "33",
+            "Masnoće": "17",
+            "Natrijum": "2",
+            "Ugljeni hidrati": "45",
+            "Vlakna": "5",
+            "Proteini": "5",
+            "Holesterol": "0"
+        }
+    },
+    {
+        "id": "10017",
+        "name": "Kelj Smoothie",
+        "imageURL": "./images/smoothie-17.jpg",
+        "ingredients": [
+            "2 šolje smrznute banane",
+            "2 šolje seckanog kelja",
+            "1 kašika lanenog semena",
+            "2 urme bez koštice",
+            "opcionalno: 1/2 kašičice svežeg rendanog đumbira",
+            "1,5 šolje soka od pomorandže"
+        ],
+        "instructions": "Sve sastojke stavite u brzi blender. Mešajte na visokoj brzini dok ne postane homogeno. Mogućnost dodavanja još soka od pomorandže po potrebi za razređivanje stvari. Odmah poslužite smoothie i prelijte omiljenim prelivima.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "banana",
+            "kelj",
+            "laneno seme",
+            "urma",
+            "sok od narandže"
+        ],
+        "nutrition": {
+            "Kalorije": "226",
+            "Šećer": "33",
+            "Masnoće": "2",
+            "Ugljeni hidrati": "51",
+            "Vlakna": "6",
+            "Proteini": "5"
+        }
+    },
+    {
+        "id": "10018",
+        "name": "Smoothie od šargarepe",
+        "imageURL": "./images/smoothie-18.jpg",
+        "ingredients": [
+            "8 oraha",
+            "1 velika šargarepa, grubo iseckana (ili narendana ako nemate blender velike brzine)",
+            "Ekstra fino narendana šargarepa za mešanje, opcionalno",
+            "1 kašičica cimeta",
+            "Posuti muškatni oraščić, sveže narendan je DODATNO ukusan",
+            "2 urme bez koštice",
+            "½ – 1 šolja tečnosti, obično koristim nemasno mleko, a zatim dodam vodu ako želim da bude malo tečnija",
+            "1 kašičica vanile"
+        ],
+        "instructions": "U blenderu velike brzine spojite sve sastojke (minus dodatnu šargarepu) dok ne postanu kremasti i glatki. Po želji umešajte još sitno narendane šargarepe (toplo preporučujem!). Na vrh dodajte nekoliko seckanih oraha i UŽIVAJTE! ",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "orah",
+            "šargarepa",
+            "cimet",
+            "mleko"
+        ],
+        "nutrition": {
+            
+        }
+    },
+    {
+        "id": "10019",
+        "name": "Smoothie sa mlekom i mangom",
+        "imageURL": "./images/smoothie-19.jpg",
+        "ingredients": [
+            "1 kašičica kurkume (ovo biste mogli potpuno izostaviti ako želite običan smoothie od manga!)",
+            "Smrznuti mango 1 šolja",
+            "¾ šolje jogurta bilo koje vrste",
+            "1 smrznuta banana ili 1 šolja karfiola",
+            "opcionalno: prskanje mleka ili vode ako vam je potrebna pomoć u pokretanju blendera"
+        ],
+        "instructions": "U brzom blenderu kombinirajte sve sastojke i blendajte dok ne postane homogeno. Ako je potrebno, dodajte još tečnosti, supenu kašiku, da bi blender krenuo. Ukoliko je previse gust dodajte malo mleka / vode po potrebi. Služite i UŽIVAJTE.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "mango",
+            "kurkuma",
+            "jogurt",
+            "banana"
+        ],
+        "nutrition": {
+            "Kalorije": "309",
+            "Masnoće": "2",
+            "Šećer": "44",
+            "Proteini": "18"
+        }
+    },
+    {
+        "id": "10020",
+        "name": "Zeleni Smoothie sa karamelom i jabukom",
+        "imageURL": "./images/smoothie-20.jpg",
+        "ingredients": [
+            "1 zelena jabuka",
+            "2 šake zelenila",
+            "prstohvat morske soli",
+            " kašika semena konoplje",
+            "1 smrznuta banana (ovo bi moglo da se izostavi, ali malo za nekoliko kockica leda)",
+            "bademovo mleko (može zameniti sok od jabuke za jači ukus jabuke)",
+            "pospite cimetom",
+            "2 urme"
+        ],
+        "instructions": "Dodajte sve sastojke (minus karamel) u blender velike brzine i blendajte na brzo. Prelijte malo karamel sosa oko čaše i ulijte smoothie u čašu. Prelijte sa malo više sosa od karamele i UŽIVAJTE.",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "jabuka",
+            "seme konoplje",
+            "bademovo mleko",
+            "banana",
+            "cimet"
+        ],
+        "nutrition": {
+            
+        }
+    },
+    {
+        "id": "10021",
+        "name": "Smoothie od ovsene kaše",
+        "imageURL": "./images/smoothie-21.jpg",
+        "ingredients": [
+            "1/4 šolje ovsa",
+            "1 banana iseckana na komade i smrznuta",
+            "1/2 šolje nezaslađenog bademovog mleka",
+            "1 kašika kremastog putera od kikirikija",
+            "1/2 kašike čistog javorovog sirupa plus dodatak po ukusu",
+            "1/2 kašičice čistog ekstrakta vanile",
+            "1/8 kašičice košer soli ne preskačite, jer ovsena kaša popinje"
+        ],
+        "instructions": "Stavite zob na dno blendera i pulsirajte nekoliko puta dok se fino ne samelje. Dodajte bananu, mleko, puter od kikirikija, javorov sirup, vaniliju, cimet i sol. Mešajte dok ne postane glatko i kremasto, zaustavljajući da biste strugali blender po potrebi. Okusite i dodajte dodatno zaslađivač ako želite slađi smoothie. Uživajte odmah.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "ovas",
+            "bademovo mleko",
+            "banana",
+            "kikiriki buter",
+            "vanila"
+        ],
+        "nutrition": {
+            "Kalorije": "327",
+            "Šećer": "24",
+            "Masnoće": "11",
+            "Ugljeni hidrati": "54",
+            "Vlakna": "7",
+            "Proteini": "8"
+        }
+    },
+    {
+        "id": "10022",
+        "name": "Grapefruit Smoothie",
+        "imageURL": "./images/smoothie-22.jpg",
+        "ingredients": [
+            "1 crveni grejpfrut",
+            "2 šolje smrznutog komadića ananasa",
+            "1/3 šolje grčkog jogurta",
+            "1 kašika kokosovog ulja",
+            "1/4  svežeg đumbira",
+            "delovi grejpa, bobičasto voće i granola (za preliv)"
+        ],
+        "instructions": "Iseckajte grejpfrut preko posude tako da možete sakupiti sav sok. Odložite 2-3 segmenta na stranu za preliv. Dodajte segment grejpa, sok od grejpa, smrznuti ananas, grčki jogurt, kokosovo ulje i sveži đumbir u blender velike snage i blendajte dok ne postane glatko. Okusite i prilagodite sastojke prema vašim željama. Ako je smuti pregust možete dodati malo nemlečnog mleka. Nalijte u dve čaše i uživajte. Ili poslužite u činiji sa omiljenim prelivima - segmenti grejpa, granola, bobice itd.",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "grejp",
+            "ananas",
+            "Grčki jogurt",
+            "kokos",
+            "đumbir"
+        ],
+        "nutrition": {
+            "Kalorije": "234",
+            "Šećer": "28",
+            "Masnoće": "7",
+            "Ugljeni hidrati": "37",
+            "Vlakna": "3",
+            "Proteini": "4"
+        }
+    },
+    {
+        "id": "10023",
+        "name": "Smoothie od krompira",
+        "imageURL": "./images/smoothie-23.jpg",
+        "ingredients": [
+            "1 šolja kockanog ljubičastog slatkog krompira, prethodno kuvano i smrznuto",
+            "1 šolja smrznutog pirinča od karfiola",
+            "1 šolja nezaslađenog kokosovog mleka",
+            "1/2 kašike đumbirske paste",
+            "1 kašika maca u prahu",
+            "1 velika urma, bez koštice",
+            "1 kašika putera"
+        ],
+        "instructions": "Dodajte sve sastojke u čašu blendera. Mešajte dok ne postane homogeno. Dodajte više (ili manje) tečnosti za željenu konzistenciju. Koristio sam 1 šolju mleka i bilo je prilično gusto. Dodajte više tečnosti ili mleka za piće kroz slamu.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "krompir",
+            "pirinča od karfiola",
+            "kokosovo mleko",
+            "đumbir",
+            "urme"
+        ],
+        "nutrition": {
+            "Serving Size": "1",
+            "Kalorije": "452",
+            "Šećer": "17",
+            "Masnoće": "13",
+            "Ugljeni hidrati": "77",
+            "Vlakna": "11",
+            "Proteini": "7"
+        }
+    },
+    {
+        "id": "10024",
+        "name": "Chai Bundeva Proteinski Smoothie",
+        "imageURL": "./images/smoothie-24.jpg",
+        "ingredients": [
+            "1/3 šolje 100% tečnog belanca",
+            "2 urme bez koštica (ili drugo zaslađivač kao što je 1/2 kašike javorov sirup)",
+            "1/2 šolje pirea od bundeve",
+            "1/2 kašike putera",
+            "1 kašičica začina za pite od bundeve",
+            "1/2 kašičice mlevenog kardamoma",
+            "2/3 šolje mleka "
+        ],
+        "instructions": "Stavite sve sastojke u šolju blendera, počev od AllVhites® 100% tečnog belanca, završavajući indijskim mlekom. Pogledajte dole navedene napomene u vezi sa smrznutom bundevom u odnosu na sveže i potrebnu količinu mleka. Mešajte dok ne postane glatko. Prebacite smoothie od bundeve u šolju ili šolju, uživajte!",
+        "preparation": "5 minutes",
+        "hashtag": [
+            "belanac",
+            "urma",
+            "bundeva",
+            "puter",
+            "kardamom"
+        ],
+        "nutrition": {
+            "Serving Size": "1",
+            "Kalorije": "306",
+            "Šećer": "36",
+            "Masnoće": "6",
+            "Ugljeni hidrati": "53",
+            "Vlakna": "7",
+            "Proteini": "13"
+        }
+    },
+    {
+        "id": "10025",
+        "name": "Kremasti Citrus đumbir Smoothie",
+        "imageURL": "./images/smoothie-25.jpg",
+        "ingredients": [
+            "2 pomorandže od pupka, oljuštene i segmentirane",
+            "1/2 šolje kokosovog mleka (ili mleka po izboru)",
+            "svež đumbir, uklonjena kora i iseckan",
+            "1 šolja leda"
+        ],
+        "instructions": "Dodajte sve sastojke u blender - pobrinite se da su vaše pomorandže segmentirane ako više volite sok od pomorandže bez pulpe. 2. Mešajte dok ne postane glatko. Dodajte još leda ili tečnosti za željenu konzistenciju.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "narandže",
+            "mleko kokosa",
+            "đumbir"
+        ],
+        "nutrition": {
+            "Serving Size": "1/2",
+            "Kalorije": "86",
+            "Šećer": "13",
+            "Masnoće": "1",
+            "Ugljeni hidrati": "19",
+            "Vlakna": "3",
+            "Proteini": "1"
+        }
+    },
+    {
+        "id": "10026",
+        "name": "Antioksidant Smoothie",
+        "imageURL": "./images/smoothie-26.jpg",
+        "ingredients": [
+            "1 šolja smrznutih borovnica",
+            "1 banana, isečena",
+            "1/2 šolje mladog spanaća",
+            "1 kašika semena lana",
+            "1 kašika kakao praha",
+            "1 kašika javorovog sirupa",
+            "1 šolja bademovog mleka (po potrebi i više)",
+            "1 kašika kolagena peptida (opcionalno)"
+        ],
+        "instructions": "Kombinujte sve sastojke, uključujući bademovo mleko, u blenderu velike brzine. Mešajte dok ne postane kremasto, po potrebi dodajte još bademovog mleka.",
+        "preparation": "5 minuta",
+        "hashtag": [
+            "borovnica",
+            "banana",
+            "panać",
+            "seme lana",
+            "kakao prah",
+            "javorov sirup"
+        ],
+        "nutrition": {
+            
+        }
+    },
+    {
+        "id": "10027",
+        "name": "Smoothie od banane i kafe",
+        "imageURL": "./images/smoothie-27.jpg",
+        "ingredients": [
+            "1/2 šolje nezaslađenog bademovog mleka ili mleka po izboru",
+            "1/2 šolje sveže pripremljene organske kafe ili hladne kave, stavite u frižider na 10 minuta",
+            "1 smrznuta banana",
+            "1 kašika proteina u prahu (volim peptide kolagena vitalnih proteina)",
+            "1/2 kašike chia semenki",
+            "Opcionalno: 1 kašičica meda ili zaslađivača po izboru",
+            "Opcionalno: Pregršt kockica leda"
+        ],
+        "instructions": "Kombinujte sve sastojke u blenderu velike brzine. Mešajte dok ne postane kremasto. Okusite i dodajte dodatno zaslađivač ako je potrebno.",
+        "preparation": "10 minuta",
+        "hashtag": [
+            "bademovo mleko",
+            "kafa",
+            "banana",
+            "protein u prahu",
+            "chia semenke"
+        ],
+        "nutrition": {
+            "Serving Size": "2",
+            "Kalorije": "96",
+            "Šećer": "7",
+            "Masnoće": "2",
+            "Ugljeni hidrati": "16",
+            "Vlakna": "3",
+            "Proteini": "6"
         }
     }
 ]

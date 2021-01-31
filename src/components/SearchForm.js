@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import { useGlobalContext } from '../context';
+import {searchForm} from '../assets/languages/searchFormLang';
 
 const SearchForm = () => {
 
-  const {setSearchTerm} = useGlobalContext();
+  const {setSearchTerm, englishLang} = useGlobalContext();
   const searchValue = useRef(null);
 
   const searchSmoothie = () => {
@@ -22,16 +23,18 @@ const SearchForm = () => {
     searchValue.current.focus();
   }, []);
 
+  const langOption = englishLang ? searchForm.en : searchForm.sr;
+
   return (
       <section className="section search">
           <form className="search-form" onSubmit={handleSubmit}>
               <div className="form-control">
-                  <label htmlFor="name">Please enter one ingredient</label>
+                  <label htmlFor="name">{langOption.caption}</label>
                   <input
                       type="text"
                       id="name"
                       ref={searchValue}
-                      placeholder="i.e. banana"
+                      placeholder={langOption.placeholder}
                       onChange={searchSmoothie}
                   />
               </div>

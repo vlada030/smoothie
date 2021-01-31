@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FiHeart, FiGrid } from "react-icons/fi";
 
+import en from '../assets/en.png';
+import sr from '../assets/sr.png';
 import logo from '../assets/logo.png';
 
 import { links } from '../assets/links';
@@ -11,7 +13,8 @@ const Navbar = () => {
 
   const {openSidebar, likedList, englishLang, toggleLanguage} = useGlobalContext();
   
-  const languageIcon = englishLang ? './images/sr.png' : './images/en.png';
+  const languageIcon = englishLang ? sr : en;
+  const linksLang = englishLang ? links.en : links.sr;
 
   return (
     <nav className='navbar'>
@@ -21,7 +24,7 @@ const Navbar = () => {
         </Link>
 
         <ul className='nav-links'>
-          {links.map(link => {
+          {linksLang.map(link => {
             const {id, path, title} = link;
             return <li key={id}>
                     <NavLink to={path} className='nav-link' exact>

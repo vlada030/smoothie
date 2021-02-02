@@ -14,11 +14,11 @@ Variables
   --secondaryLightColor: #c4ff0e;
   --secondaryColor:#96f585 ;
   --secondaryDarkColor: #129c6e;
-  --mainWhite: #fff;
+  
   --offWhite: #f7f7f7;
-  --mainBackground: #f1f5f8;
+  
   --mainOverlay: rgba(35, 10, 36, 0.4);
-  --mainBlack: #222;
+  
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainRed: #ec1c24;
@@ -32,6 +32,20 @@ Variables
   --smallWidth: 85vw;
   --maxWidth: 40rem;
   --fullWidth: 1170px;
+}
+
+.light-theme {
+  --mainBackground: #f1f5f8;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  
+}
+
+.dark-theme {
+  --mainBackground: #282c35;
+  /* --mainBackground: #373c49; */
+  --mainBlack: #f1f5f8;
+  /* --mainWhite: #fff; */
 }
 /* 
 ====== 
@@ -148,12 +162,13 @@ Buttons
 }
 
 .btn-like {
+  color: var(--mainBlack);
   border: none;
   background-color: transparent;
   outline: none;
 }
 
-.btn-like.liked {
+.liked {
   color: var(--mainRed);
 }
 
@@ -183,12 +198,12 @@ Navbar
 
 .logo {
   width: 12rem;
+  border-radius: 5px;
   box-shadow: none;
   transition: var(--mainTransition);
 } 
 
 .logo:hover {
-  width: 12rem;
   box-shadow: var(--lightShadow);
 }
 
@@ -199,6 +214,14 @@ Navbar
 .nav-toggle {
   border: none;
   background-color: transparent;
+}
+
+.nav-toggle:active {
+  outline: none;
+}
+
+.nav-toggle:focus {
+  outline: none;
 }
 
 .nav-toggle-icon {
@@ -691,6 +714,10 @@ smoothie
   grid-template-columns: 1fr 1fr;
 }
 
+.mt-3 {
+  margin-top: 3rem;
+}
+
 .grid-container p {
   align-self: center;
 }
@@ -698,6 +725,7 @@ smoothie
 .likes-text {
   font-size: 1.5rem;
   color: var(--primaryDarkColor);
+
 }
 
 @media screen and (min-width: 800px) {
@@ -808,4 +836,93 @@ smoothie
     justify-content: center;
     padding: 0.5rem;
     padding-top: 0;
+}
+
+.react-toggle {
+  touch-action: pan-x;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-toggle--checked .react-toggle-track-check {
+  opacity: 1;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+ 
+.react-toggle--checked .react-toggle-track-x {
+  opacity: 1;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.react-toggle--focus .react-toggle-thumb {
+  box-shadow: 0 0 2px 3px var(--primaryColor);
+}
+
+.react-toggle-track {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #0f1114;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.react-toggle-track-check {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+
+.react-toggle-track-x {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+}
+
+.react-toggle-thumb {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  -webkit-transition: all .5s cubic-bezier(.23,1,.32,1) 0ms;
+  transition: all .5s cubic-bezier(.23,1,.32,1) 0ms;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }

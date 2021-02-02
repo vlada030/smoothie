@@ -33,6 +33,7 @@ const AppProvider = ({ children }) => {
   const [smoothies, setSmoothies] = useState([]);
   const [likedList, setLikedList] = useState(initialLikedList);
   const [englishLang, setEnglishLang] = useState(true);
+  const [theme, setTheme] = useState('light-theme');
 
   const closeSidebar = () => {
     setShowSidebar(false);
@@ -49,6 +50,14 @@ const AppProvider = ({ children }) => {
 
   const toggleLanguage = () => {
     setEnglishLang(!englishLang);
+  }
+
+  const themeToggleButton = () => {
+    if (theme === 'light-theme') {
+      setTheme('dark-theme');
+    } else {
+      setTheme('light-theme');
+    }
   }
 
   const toggleLike = (smoothieItem) => {
@@ -105,6 +114,11 @@ const AppProvider = ({ children }) => {
     
   }, [searchTerm, englishLang]);
 
+  // THEME TOGGLER
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme])
+
   return <AppContext.Provider value={{
             showSidebar,
             openSidebar,
@@ -121,7 +135,9 @@ const AppProvider = ({ children }) => {
             likedList,
             toggleLike,
             englishLang,
-            toggleLanguage
+            toggleLanguage,
+            theme,
+            themeToggleButton
             }}>
           {children}
         </AppContext.Provider>

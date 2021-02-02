@@ -104,7 +104,7 @@ const SingleSmoothie = () => {
           </li>
 
           <li>
-            <div className='grid-container'>
+            <div className='grid-container mt-3'>
               <p className='likes-text'>{langOption.fav_title}</p>
               <button className={helperClass} onClick={() => toggleLike(smoothie)}>
                 <FiHeart className='nav-favorites-icon'/> 

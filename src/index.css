@@ -753,6 +753,7 @@ Form
   color: var(--primaryColor);
 }
 .form-control input {
+  color: var(--primaryDarkColor);
   width: 100%;
   border-color: transparent;
   border-bottom: 2px solid var(--primaryColor);

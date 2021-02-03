@@ -11,7 +11,7 @@ const SearchForm = () => {
     // u slucaju unosa vise reci da uzima samo prvu
     const firstArrElement = searchValue.current.value.split(' ')[0];
 
-    setSearchTerm(firstArrElement);
+    setSearchTerm(firstArrElement.toLowerCase());
   }
 
   // ovo se dodaje u svakom slucaju jer kada udarimo enter strana se refreshuje i ucitava ispocetka

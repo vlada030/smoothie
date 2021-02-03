@@ -16,7 +16,7 @@ const Navbar = () => {
   const languageIcon = englishLang ? sr : en;
   const linksLang = englishLang ? links.en : links.sr;
 
-  const themeToggleClass = theme === 'light-theme' ? 'react-toggle': 'react-toggle react-toggle--checked';
+  const themeToggleClass = theme === 'light-theme' ? 'react-toggle nav-react-toggle': 'react-toggle react-toggle--checked nav-react-toggle';
 
   return (
     <nav className='navbar'>
@@ -51,7 +51,6 @@ const Navbar = () => {
           <img  src={languageIcon} alt='lang'/>
         </button>
 
-      </div>
       <div className={themeToggleClass} onClick={themeToggleButton}>
         <div className="react-toggle-track">
           <div className="react-toggle-track-check">
@@ -62,6 +61,7 @@ const Navbar = () => {
               </div>
         </div>
             <div className="react-toggle-thumb"></div>
+      </div>
       </div>
     </nav>
   )

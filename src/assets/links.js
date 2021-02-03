@@ -13,7 +13,7 @@ export const links = {
         {
             id: 3,
             path: '/howto',
-            title: 'How To'
+            title: `How To`
         },
         {
             id: 4,

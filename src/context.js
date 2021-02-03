@@ -13,13 +13,20 @@ const databaseRef = database.database().ref();
 //     initialLikedList = initString.split(' ');
 //   }
 // }
-
+// provera da li ima liked items u local storage
 let initialLikedList = [];
 let initString = localStorage.getItem('likedList');
 if (initString) {
   if (initString.length) {
     initialLikedList = JSON.parse( initString);
   }
+}
+
+// provera da li postoji theme u local storage
+let initialTheme = 'light-theme';
+let storageTheme = localStorage.getItem('theme');
+if (storageTheme) {
+  initialTheme = storageTheme;
 }
 
 const AppContext = React.createContext();
@@ -33,7 +40,7 @@ const AppProvider = ({ children }) => {
   const [smoothies, setSmoothies] = useState([]);
   const [likedList, setLikedList] = useState(initialLikedList);
   const [englishLang, setEnglishLang] = useState(true);
-  const [theme, setTheme] = useState('light-theme');
+  const [theme, setTheme] = useState(initialTheme);
 
   const closeSidebar = () => {
     setShowSidebar(false);
@@ -53,11 +60,14 @@ const AppProvider = ({ children }) => {
   }
 
   const themeToggleButton = () => {
-    if (theme === 'light-theme') {
-      setTheme('dark-theme');
-    } else {
-      setTheme('light-theme');
-    }
+    let tempTheme = 'light-theme';
+
+    if (theme === tempTheme) {
+      tempTheme = 'dark-theme';
+    } 
+
+    localStorage.setItem('theme', tempTheme);
+    setTheme(tempTheme);
   }
 
   const toggleLike = (smoothieItem) => {

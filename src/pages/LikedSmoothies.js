@@ -24,7 +24,7 @@ const LikedSmoothies = () => {
       }
 
     return <section className='section'>
-                <h2 className='section-title colorized colorized--red'>My favorites</h2>
+                <h2 className='section-title colorized colorized--red'>{langOption.title}</h2>
                 <div className='smoothies-center'>
                 {likedList.map(item => {
                     return <Smoothie key={item.id} {...item}/>

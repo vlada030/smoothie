@@ -39,9 +39,11 @@ export const smoothieList = {
 
 export const likedSmoothies = {
     en: {
-        info: 'your liked list is empty'
+        info: 'your liked list is empty',
+        title: 'my favorites'
     },
     sr: {
         info: 'lista je prazna',
+        title: 'omiljeni'
     }
 }

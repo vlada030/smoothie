@@ -10,7 +10,6 @@ const LikedSmoothies = () => {
     const {loading, likedList, englishLang} = useGlobalContext();
     const langOption = englishLang ? likedSmoothies.en : likedSmoothies.sr;
 
-
     if (loading) {
         return <Loading />
       }

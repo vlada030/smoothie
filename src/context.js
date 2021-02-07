@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { useCallback } from 'react';
-
+import pagination from './assets/utils/pagination';
 // import podesenog firebase objekta
 import database from './firebaseConfig';
 const databaseRef = database.database().ref();
@@ -38,6 +37,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState(''); 
   const [smoothies, setSmoothies] = useState([]);
+  const [page, setPage] = useState(0);
   const [likedList, setLikedList] = useState(initialLikedList);
   const [englishLang, setEnglishLang] = useState(true);
   const [theme, setTheme] = useState(initialTheme);
@@ -54,6 +54,35 @@ const AppProvider = ({ children }) => {
     setShowModal(false);
     setModalMsg('');
   }
+
+  const showPage = (ind) => {
+    setPage(ind);
+  }
+
+  const nextPage = () => {
+    setPage(currPage => {
+      let newPage = currPage;
+
+      if (page < smoothies.length - 1) {
+        newPage = currPage + 1;
+      }
+
+      return newPage;
+    })
+  }
+
+  const prevPage = () => {
+    setPage(currPage => {
+      let newPage = currPage;
+
+      if (currPage > 0) {
+        newPage = currPage - 1;
+      }
+
+      return newPage;
+    })
+  }
+
 
   const toggleLanguage = () => {
     setEnglishLang(!englishLang);
@@ -90,7 +119,7 @@ const AppProvider = ({ children }) => {
     setLoading(true);
     // ubacen setTimeout da nebi stalno ucitavao prilikom svakog inputa, manje server opterecen
     const timeout = setTimeout(() => {
-      console.log(`FETCH ALL SMOOTHIES`);
+      // console.log(`FETCH ALL SMOOTHIES`);
 
       // POSTAVLJANJE FIREBASE
       databaseRef.child(databaseRefChoice).once("value")
@@ -103,7 +132,7 @@ const AppProvider = ({ children }) => {
               return overallString.includes(searchTerm)
             });
 
-            setSmoothies(filteredData);
+            setSmoothies(pagination(filteredData));
             setLoading(false);
         })
         .catch((error) => {
@@ -122,7 +151,7 @@ const AppProvider = ({ children }) => {
 
     return () => clearTimeout(timeout);
     
-  }, [searchTerm, englishLang]);
+  }, [searchTerm, databaseRefChoice]);
 
   // THEME TOGGLER
   useEffect(() => {
@@ -142,6 +171,10 @@ const AppProvider = ({ children }) => {
             searchTerm,
             setSearchTerm,
             smoothies,
+            page,
+            showPage,
+            nextPage,
+            prevPage,
             likedList,
             toggleLike,
             englishLang,

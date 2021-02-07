@@ -115,10 +115,12 @@ Buttons
   border-radius: var(--mainBorderRadius);
   display: inline-block;
 }
-.btn:hover {
+.btn:hover,
+.btn-page-active {
   background: var(--primaryColor);
   color: var(--mainWhite);
 }
+
 .btn-white {
   background: transparent;
   color: var(--mainWhite);
@@ -778,6 +780,38 @@ Form
   border-bottom: 2px solid var(--secondaryColor);
 
 }
+
+/* 
+====== 
+pagination buttons
+======
+*/
+
+.btn-container {
+  width: var(--smallWidth);
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  max-width: var(--maxWidth);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-page {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  padding: 0;
+  letter-spacing: normal;
+}
+
+.btn-prev,
+.btn-next {
+  border: none;
+  outline: none;
+}
+
 /* 
 ====== 
 smoothie

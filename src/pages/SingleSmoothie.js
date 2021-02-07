@@ -25,7 +25,7 @@ const SingleSmoothie = () => {
   const langOption = englishLang ? singleSmoothie.en : singleSmoothie.sr;
 
   useEffect(() => {
-    console.log('FETCH SINGLE SMOOTIE');
+    // console.log('FETCH SINGLE SMOOTIE');
     setLoading(true);
     databaseRef.orderByChild('id').equalTo(id).once("value").then(snapshot => {
       // mora ovako jer tako firebase uvek vraca neku vrstu array

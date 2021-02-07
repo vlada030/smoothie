@@ -6,7 +6,8 @@ import { useGlobalContext } from '../context';
 
 const SmoothieList = () => {
 
-  const {loading, smoothies, englishLang} = useGlobalContext();
+  const {loading, smoothies, page, englishLang} = useGlobalContext();
+  
   const langOption = englishLang ? smoothieList.en : smoothieList.sr;
 
   if (loading) {
@@ -23,7 +24,7 @@ const SmoothieList = () => {
     <section className='section'>
       <h2 className='section-title colorized colorized--red'>smoothies</h2>
       <div className='smoothies-center'>
-        {smoothies.map(item => {
+        {smoothies[page].map(item => {
           return <Smoothie key={item.id} {...item}/>
         })}
       </div>
